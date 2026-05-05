@@ -1,0 +1,11 @@
+{
+  "generated_at": "2026-05-05T17:04:40+00:00",
+  "runner": "longmemeval_memory_agent_runner.py",
+  "cases_path": "D:\\codex_ws\\codingagent\\codeforge\\benchmarks\\public_subsets\\longmemeval_s_mini10_20260505\\longmemeval_s_cases.jsonl",
+  "offset": 0,
+  "batch_size": 5,
+  "chat_prefix": "longmemeval_s_batch01_default3",
+  "max_sessions": 3,
+  "max_session_chars": 12000,
+  "user_id": "longmemeval-eval"
+}

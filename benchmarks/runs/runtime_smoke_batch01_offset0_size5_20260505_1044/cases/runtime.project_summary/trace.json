@@ -1,0 +1,85 @@
+[
+  {
+    "event": "route_model.start",
+    "ts": "2026-05-05T02:43:40.897Z",
+    "stage_hint": "chat_memory_query_expand",
+    "task_preview": "Return JSON only with key `queries` as 2-3 concise search queries for session memory retrieval.\nKeep each query short an"
+  },
+  {
+    "event": "route_model.tier_forced",
+    "ts": "2026-05-05T02:43:40.897Z",
+    "stage_hint": "chat_memory_query_expand",
+    "from_tier": "balanced",
+    "to_tier": "fast"
+  },
+  {
+    "event": "chat_memory.compaction",
+    "ts": "2026-05-05T02:43:40.925Z",
+    "chat_id": "eval-runtime.quick_answer.redis_role",
+    "compacted": false,
+    "archived_count": 0,
+    "block_count": 0,
+    "reason": "no_candidates"
+  },
+  {
+    "event": "route_model.end",
+    "ts": "2026-05-05T02:43:42.035Z",
+    "stage_hint": "chat_memory_query_expand",
+    "model": "qwen3.5-flash-2026-02-23",
+    "tier": "fast",
+    "attempt": 1,
+    "max_tokens": 512,
+    "timeout_s": 80,
+    "enable_thinking": false,
+    "finish_reason": "stop",
+    "elapsed_ms": 1138,
+    "response_preview": "{\n  \"queries\": [\n    \"Self AI project summary\",\n    \"Self AI autonomous execution engine overview\",\n    \"Self AI agent orchestration capabilities\"\n  ]\n}"
+  },
+  {
+    "event": "route_model.start",
+    "ts": "2026-05-05T02:43:42.790Z",
+    "stage_hint": "mainloop_decide",
+    "task_preview": "# Role\nYou are the execution brain of Self AI.\n- Decide whether to return final_answer or tool_calls.\n\n# Output (JSON on"
+  },
+  {
+    "event": "route_model.end",
+    "ts": "2026-05-05T02:43:50.684Z",
+    "stage_hint": "mainloop_decide",
+    "model": "qwen3.6-plus-2026-04-02",
+    "tier": "balanced",
+    "attempt": 1,
+    "max_tokens": 32768,
+    "timeout_s": 80,
+    "enable_thinking": false,
+    "finish_reason": "stop",
+    "elapsed_ms": 7894,
+    "response_preview": "{\n  \"type\": \"final_answer\",\n  \"response\": \"Self AI is an autonomous execution engine that orchestrates tools, agents, and memory to solve complex tasks with pre"
+  },
+  {
+    "event": "route_model.start",
+    "ts": "2026-05-05T02:43:50.827Z",
+    "stage_hint": "memory_sidecar",
+    "task_preview": "You are a memory manager for an agentic coding system.\nReturn JSON only. No markdown.\nDecide memory profile per memory_t"
+  },
+  {
+    "event": "route_model.tier_forced",
+    "ts": "2026-05-05T02:43:50.827Z",
+    "stage_hint": "memory_sidecar",
+    "from_tier": "balanced",
+    "to_tier": "fast"
+  },
+  {
+    "event": "route_model.end",
+    "ts": "2026-05-05T02:43:54.763Z",
+    "stage_hint": "memory_sidecar",
+    "model": "qwen3.5-flash-2026-02-23",
+    "tier": "fast",
+    "attempt": 1,
+    "max_tokens": 2048,
+    "timeout_s": 80,
+    "enable_thinking": false,
+    "finish_reason": "stop",
+    "elapsed_ms": 3936,
+    "response_preview": "{\n  \"profiles\": {\n    \"turn_summary\": {\n      \"memory_type\": \"turn_summary\",\n      \"memory_class\": \"fact\",\n      \"target_collection\": \"cf_chat_memory\",\n      \"i"
+  }
+]

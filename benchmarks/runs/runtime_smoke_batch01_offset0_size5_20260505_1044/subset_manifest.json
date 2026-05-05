@@ -1,0 +1,81 @@
+{
+  "schema_version": "light_public_eval.v1",
+  "selected_stage": "runtime_smoke",
+  "limit": 0,
+  "runtime_smoke_cases": [
+    {
+      "case_id": "runtime.quick_answer.redis_role",
+      "category": "runtime_smoke",
+      "prompt": "In one concise sentence, explain Redis' role in this Self AI project.",
+      "expect_substrings": [
+        "redis"
+      ]
+    },
+    {
+      "case_id": "runtime.project_summary",
+      "category": "runtime_smoke",
+      "prompt": "Write a short two-sentence project summary for Self AI.",
+      "expect_substrings": [
+        "self ai"
+      ]
+    },
+    {
+      "case_id": "runtime.code_generation.average",
+      "category": "runtime_smoke",
+      "prompt": "Return a Python function named average that computes the average of a list and raises ValueError for an empty list. Do not create files.",
+      "expect_substrings": [
+        "def average",
+        "ValueError"
+      ]
+    },
+    {
+      "case_id": "runtime.release_eval_plan",
+      "category": "runtime_smoke",
+      "prompt": "Give three bullet points for evaluating a coding-agent project before a GitHub release.",
+      "expect_substrings": [
+        "release"
+      ],
+      "min_bullets": 3
+    },
+    {
+      "case_id": "runtime.storage_boundaries",
+      "category": "runtime_smoke",
+      "prompt": "Summarize the separate roles of Redis, Qdrant, and Neo4j in this project. Keep it under 90 words.",
+      "expect_substrings": [
+        "redis",
+        "qdrant",
+        "neo4j"
+      ]
+    }
+  ],
+  "public_stage_manifests": [
+    {
+      "stage": "code_correctness",
+      "dataset": "EvalPlus HumanEval+ mini",
+      "source_url": "https://github.com/evalplus/evalplus",
+      "planned_subset": "first 20 stable HumanEval+ task ids",
+      "status": "planned_not_run_by_default"
+    },
+    {
+      "stage": "tool_calling",
+      "dataset": "BFCL mini",
+      "source_url": "https://gorilla.cs.berkeley.edu/leaderboard",
+      "planned_subset": "50 single-turn non-live examples",
+      "status": "planned_not_run_by_default"
+    },
+    {
+      "stage": "factuality",
+      "dataset": "SimpleQA mini",
+      "source_url": "https://github.com/openai/simple-evals",
+      "planned_subset": "100 fixed questions",
+      "status": "planned_not_run_by_default"
+    },
+    {
+      "stage": "retrieval_quality",
+      "dataset": "BEIR SciFact mini",
+      "source_url": "https://github.com/beir-cellar/beir",
+      "planned_subset": "50 fixed SciFact queries",
+      "status": "planned_not_run_by_default"
+    }
+  ]
+}

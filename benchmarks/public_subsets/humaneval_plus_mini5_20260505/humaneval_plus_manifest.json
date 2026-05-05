@@ -1,0 +1,14 @@
+{
+  "dataset": "EvalPlus HumanEval+",
+  "source_url": "https://huggingface.co/datasets/evalplus/humanevalplus/resolve/main/test.jsonl",
+  "case_count": 5,
+  "cases_path": "D:\\codex_ws\\codingagent\\codeforge\\benchmarks\\public_subsets\\humaneval_plus_mini5_20260505\\humaneval_plus_cases.jsonl",
+  "raw_path": "D:\\codex_ws\\codingagent\\codeforge\\benchmarks\\public_subsets\\humaneval_plus_mini5_20260505\\raw\\humaneval_plus_raw.jsonl",
+  "task_ids": [
+    "HumanEval/0",
+    "HumanEval/1",
+    "HumanEval/2",
+    "HumanEval/3",
+    "HumanEval/4"
+  ]
+}

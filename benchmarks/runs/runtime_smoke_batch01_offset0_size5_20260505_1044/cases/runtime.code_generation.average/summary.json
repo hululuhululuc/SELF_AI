@@ -1,0 +1,44 @@
+{
+  "case_id": "runtime.code_generation.average",
+  "category": "runtime_smoke",
+  "started_at": "2026-05-05T02:44:10+00:00",
+  "elapsed_s": 14.979,
+  "ok": true,
+  "validation": {
+    "ok": true,
+    "reason": "",
+    "details": ""
+  },
+  "model": "qwen3.6-plus-2026-04-02",
+  "run_id": "d23521b4-d8a0-4cb9-886b-183f9c06bb56",
+  "workflow_decision": {
+    "execution_mode": "code_generation",
+    "next_node": "final_answer",
+    "skip_research": true,
+    "skip_debate": true,
+    "use_quick_answer": true,
+    "requires_context": false,
+    "requires_debate": false,
+    "max_iterations": 1,
+    "selected_agents": [],
+    "rationale": "model_driven",
+    "policy_version": "mainloop_v1",
+    "metadata": {
+      "source": "model_mainloop",
+      "turn": 1
+    },
+    "constraint_maintenance": {
+      "enabled": false,
+      "reason": "No session constraints modified."
+    }
+  },
+  "trace_counts": {
+    "trace_events": 9,
+    "model_calls": 3,
+    "tool_call_end": 0,
+    "tool_call_error": 0,
+    "terminal_blocks": 0
+  },
+  "response_preview": "```python\ndef average(numbers: list) -> float:\n    if not numbers:\n        raise ValueError(\"List is empty\")\n    return sum(numbers) / len(numbers)\n```",
+  "error": null
+}

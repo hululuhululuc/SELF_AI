@@ -1,0 +1,9 @@
+{
+  "case_id": "runtime.release_eval_plan",
+  "category": "runtime_smoke",
+  "prompt": "Give three bullet points for evaluating a coding-agent project before a GitHub release.",
+  "expect_substrings": [
+    "release"
+  ],
+  "min_bullets": 3
+}

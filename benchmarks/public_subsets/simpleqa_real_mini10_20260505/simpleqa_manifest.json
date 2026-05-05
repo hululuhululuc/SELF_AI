@@ -1,0 +1,19 @@
+{
+  "dataset": "SimpleQA public test set",
+  "source_url": "https://huggingface.co/datasets/basicv8vc/SimpleQA/resolve/main/simple_qa_test_set.csv",
+  "case_count": 10,
+  "cases_path": "D:\\codex_ws\\codingagent\\codeforge\\benchmarks\\public_subsets\\simpleqa_real_mini10_20260505\\simpleqa_cases.jsonl",
+  "raw_path": "D:\\codex_ws\\codingagent\\codeforge\\benchmarks\\public_subsets\\simpleqa_real_mini10_20260505\\raw\\simpleqa_raw.jsonl",
+  "case_ids": [
+    "simpleqa_0",
+    "simpleqa_1",
+    "simpleqa_2",
+    "simpleqa_3",
+    "simpleqa_4",
+    "simpleqa_5",
+    "simpleqa_6",
+    "simpleqa_7",
+    "simpleqa_8",
+    "simpleqa_9"
+  ]
+}

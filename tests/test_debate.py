@@ -1,107 +1,28 @@
 # coding=utf-8
-"""Tests for debate subgraph in CodeForge AI.
+"""Legacy debate cleanup checks (MainLoop semantics)."""
 
-This module contains tests for multi-agent debate logic.
-"""
+from __future__ import annotations
 
-from collections import deque
-from unittest.mock import AsyncMock, patch
+import importlib.util
+from pathlib import Path
 
 import pytest
 
-from ..debate import run_debate, vote
-from ..state import State
+from tests._engine_helpers import build_test_kernel
+
+
+def test_legacy_debate_module_removed_from_production_path() -> None:
+    assert importlib.util.find_spec("self_ai.debate") is None
 
 
 @pytest.mark.asyncio
-async def test_debate_consensus() -> None:
-    """Test debate with consensus vote; real-world: debate 'use async in Python?' expecting pro win."""
-    state: State = {
-        "task": "use async in Python?",
-        "messages": [],
-        "input": "",
-        "task_queue": deque(),
-        "private": {},
-        "long_term": {},
-    }
-    with patch(
-        "..debate.route_model",
-        new_callable=AsyncMock,
-        side_effect=lambda t, c: {
-            "response": "Pro: Faster I/O"
-            if "pro" in t
-            else "Con: Complexity"
-            if "con" in t
-            else "Mod: Balance pro"
-        },
-    ):
-        result: State = await run_debate(state)
-        assert len(result["messages"]) == 6, (
-            "Expected 3 messages per round for 2 rounds"
-        )  # Insight: Full cycles
-        assert vote(result), "Expected pro win on balance"
-        assert "Faster I/O" in result["messages"][0]["content"], (
-            "Expected real-world pro insight"
-        )
+async def test_kernel_run_has_no_debate_stage_or_trace(tmp_path: Path) -> None:
+    kernel, redis_store = build_test_kernel(tmp_path)
 
+    await kernel.run("architecture tradeoff for distributed system", session_id="s-debate-clean")
 
-@pytest.mark.asyncio
-async def test_debate_refine() -> None:
-    """Test debate with no consensus leading to refinement; real-world: 'microservices vs monolith' expecting con win/refine."""
-    state: State = {
-        "task": "microservices vs monolith",
-        "messages": [],
-        "input": "",
-        "task_queue": deque(),
-        "private": {},
-        "long_term": {},
-    }
-    with patch(
-        "..debate.route_model",
-        new_callable=AsyncMock,
-        side_effect=lambda t, c: {
-            "response": "Pro: Scale"
-            if "pro" in t
-            else "Con: Overhead"
-            if "con" in t
-            else "Mod: Con wins"
-        },
-    ):
-        result: State = await run_debate(state)
-        assert "Refine based on debate" in result["task"], (
-            "Expected refinement on no consensus"
-        )  # Insight: Iteration path
-        assert not vote(result), "Expected con majority"
-        assert "Overhead" in result["messages"][1]["content"], (
-            "Expected real-world con insight"
-        )
+    node_names = [name for _, name, _ in redis_store.node_outputs]
+    assert all("debate" not in name for name in node_names)
 
-
-@pytest.mark.asyncio
-async def test_debate_single_round() -> None:
-    """Test single round debate; real-world: simple 'REST vs GraphQL' for quick mod."""
-    state: State = {
-        "task": "REST vs GraphQL",
-        "messages": [],
-        "input": "",
-        "task_queue": deque(),
-        "private": {},
-        "long_term": {},
-    }
-    with patch(
-        "..debate.route_model",
-        new_callable=AsyncMock,
-        side_effect=lambda t, c: {
-            "response": "Pro: Flexible"
-            if "pro" in t
-            else "Con: Overfetch"
-            if "con" in t
-            else "Mod: Pro"
-        },
-    ):
-        result: State = await run_debate(state, rounds=1)
-        assert len(result["messages"]) == 3, "Expected 3 messages for single round"
-        assert vote(result), "Expected pro win"
-        assert "Flexible" in result["messages"][0]["content"], (
-            "Expected real-world pro insight"
-        )
+    trace_events = [event.get("event", "") for _, event in redis_store.traces if isinstance(event, dict)]
+    assert all("debate" not in event_name for event_name in trace_events)

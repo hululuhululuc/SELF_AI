@@ -1,0 +1,563 @@
+{
+  "case_id": "08f4fc43",
+  "chat_id": "longmemeval_s_batch02_default3_08f4fc43",
+  "question": "How many days had passed between the Sunday mass at St. Mary's Church and the Ash Wednesday service at the cathedral?",
+  "answer_gold": "30 days. 31 days (including the last day) is also acceptable.",
+  "answer_prediction": "Answer: 3 days\nEvidenceSessionIDs: answer_6ea1541e_2,answer_6ea1541e_1",
+  "answer_correct": false,
+  "not_attempted": false,
+  "false_memory": true,
+  "expected_session_ids": [
+    "answer_6ea1541e_2",
+    "answer_6ea1541e_1"
+  ],
+  "predicted_session_ids": [
+    "answer_6ea1541e_2",
+    "answer_6ea1541e_1"
+  ],
+  "evidence_hit": true,
+  "l1_hits": 2,
+  "l2_hits": 4,
+  "l3_hits": 2,
+  "query_elapsed_s": 22.158,
+  "query_errors": [],
+  "query_metadata": {
+    "input_garbled_warning": false,
+    "chat_id": "longmemeval_s_batch02_default3_08f4fc43",
+    "user_id": "longmemeval-eval",
+    "chat_recent_turns": [
+      {
+        "memory_id": "turn:1",
+        "turn_id": 1,
+        "run_id": "4a7dbd6f-b758-4594-b5e2-736473f9c9e5",
+        "timestamp": "2026-05-05T17:24:43.404315+00:00",
+        "memory_type": "preference",
+        "memory_class": "preference",
+        "source_layer": "L1",
+        "source_type": "turn_log",
+        "preview": "Memory ingestion step. Session ID: answer_6ea1541e_2 Session Date: 2023/02/20 (Mon) 12:15 Read and remember the transcript below for future cross-session QA in this same chat. Reply with one short line: INGESTED <Sess...\nExecution is not verified: the model produced verbal completion without sufficient successful tool-execution evidence. Ask it to complete tool actions first, then return the final answer.\nTask: Memory ingestion step. Session ID: answer_6ea1541e_2 Session Date: 2023/02/20 (Mon) 12:15 Read and remember the transcript below for future cross-session QA in this same chat. Reply with one short line: INGESTED <Session ID>. [user] I'm planning to volunteer at a local soup kitchen this weekend and I was wonde...",
+        "score": {
+          "age_hours": 0.009,
+          "decay": 1.0,
+          "importance": 0.8,
+          "confidence": 0.9,
+          "importance_boost": 1.18,
+          "confidence_boost": 1.2,
+          "reliability_boost": 1.1,
+          "decay_mode": "none",
+          "pinned": true,
+          "final_score": 1.5576
+        },
+        "refs": {
+          "turn_id": 1,
+          "run_id": "4a7dbd6f-b758-4594-b5e2-736473f9c9e5"
+        }
+      },
+      {
+        "memory_id": "turn:2",
+        "turn_id": 2,
+        "run_id": "dca77d3b-667e-4890-adbc-8da2ebf1f933",
+        "timestamp": "2026-05-05T17:25:14.608692+00:00",
+        "memory_type": "fact",
+        "memory_class": "fact",
+        "source_layer": "L1",
+        "source_type": "turn_log",
+        "preview": "Memory ingestion step. Session ID: answer_6ea1541e_1 Session Date: 2023/02/20 (Mon) 21:03 Read and remember the transcript below for future cross-session QA in this same chat. Reply with one short line: INGESTED <Sess...\nINGESTED answer_6ea1541e_1\nTask: Memory ingestion step. Session ID: answer_6ea1541e_1 Session Date: 2023/02/20 (Mon) 21:03 Read and remember the transcript below for future cross-session QA in this same chat. Reply with one short line: INGESTED <Session ID>. [user] I'm thinking of volunteering at a local charity event soon. Do you have any in...",
+        "score": {
+          "age_hours": 0.0,
+          "decay": 1.0,
+          "importance": 0.3,
+          "confidence": 0.9,
+          "importance_boost": 0.88,
+          "confidence_boost": 1.2,
+          "reliability_boost": 1.1,
+          "decay_mode": "fast",
+          "pinned": false,
+          "final_score": 1.161595
+        },
+        "refs": {
+          "turn_id": 2,
+          "run_id": "dca77d3b-667e-4890-adbc-8da2ebf1f933"
+        }
+      },
+      {
+        "memory_id": "longmemeval_s_batch02_default3_08f4fc43-turn-1-issue",
+        "turn_id": 1,
+        "run_id": "4a7dbd6f-b758-4594-b5e2-736473f9c9e5",
+        "timestamp": "2026-05-05T17:24:43.404315+00:00",
+        "memory_type": "issue",
+        "memory_class": "issue",
+        "source_layer": "L2",
+        "source_type": "chat_memory:issue",
+        "preview": "[issue/issue] | Task: Memory ingestion step. Session ID: answer_6ea1541e_2 Session Date: 2023/02/20 (Mon) 12:15 Read and remember the transcript below for future cross-session QA in this same chat. Reply with one short line: INGESTED... | signals=error_type:CompletionNotVerifiedTerminal,stage:mainloop",
+        "score": {
+          "semantic_score": 0.518831,
+          "final_score": 0.646192,
+          "decay_mode": "slow",
+          "pinned": false,
+          "importance": 0.6,
+          "confidence": 0.85
+        },
+        "refs": {
+          "chunk_id": "longmemeval_s_batch02_default3_08f4fc43-turn-1-issue",
+          "source": "chat:longmemeval_s_batch02_default3_08f4fc43",
+          "path": "",
+          "symbol": "",
+          "collection": "cf_review_memory",
+          "query_variant": 1
+        }
+      },
+      {
+        "memory_id": "longmemeval_s_batch02_default3_08f4fc43-turn-2-summary",
+        "turn_id": 2,
+        "run_id": "dca77d3b-667e-4890-adbc-8da2ebf1f933",
+        "timestamp": "2026-05-05T17:25:14.608692+00:00",
+        "memory_type": "turn_summary",
+        "memory_class": "fact",
+        "source_layer": "L2",
+        "source_type": "chat_memory:turn_summary",
+        "preview": "[fact/turn_summary] | Task: Memory ingestion step. Session ID: answer_6ea1541e_1 Session Date: 2023/02/20 (Mon) 21:03 Read and remember the transcript below for future cross-session QA in this same chat. Reply with one short line: INGESTED <Session ID>. [user] I'm thinking of volunteering at a local charity event soon. Do you have any in...",
+        "score": {
+          "semantic_score": 0.563342,
+          "final_score": 0.594879,
+          "decay_mode": "fast",
+          "pinned": false,
+          "importance": 0.3,
+          "confidence": 0.9
+        },
+        "refs": {
+          "chunk_id": "longmemeval_s_batch02_default3_08f4fc43-turn-2-summary",
+          "source": "chat:longmemeval_s_batch02_default3_08f4fc43",
+          "path": "",
+          "symbol": "",
+          "collection": "cf_chat_memory",
+          "query_variant": 1
+        }
+      },
+      {
+        "memory_id": "longmemeval_s_batch02_default3_08f4fc43-turn-2-response",
+        "turn_id": 2,
+        "run_id": "dca77d3b-667e-4890-adbc-8da2ebf1f933",
+        "timestamp": "2026-05-05T17:25:14.608692+00:00",
+        "memory_type": "response_summary",
+        "memory_class": "ephemeral",
+        "source_layer": "L2",
+        "source_type": "chat_memory:response_summary",
+        "preview": "[ephemeral/response_summary] | INGESTED answer_6ea1541e_1",
+        "score": {
+          "semantic_score": 0.46713,
+          "final_score": 0.469224,
+          "decay_mode": "fast",
+          "pinned": false,
+          "importance": 0.2,
+          "confidence": 0.95
+        },
+        "refs": {
+          "chunk_id": "longmemeval_s_batch02_default3_08f4fc43-turn-2-response",
+          "source": "chat:longmemeval_s_batch02_default3_08f4fc43",
+          "path": "",
+          "symbol": "",
+          "collection": "cf_chat_memory",
+          "query_variant": 1
+        }
+      },
+      {
+        "memory_id": "longmemeval_s_batch02_default3_08f4fc43-turn-1-response",
+        "turn_id": 1,
+        "run_id": "4a7dbd6f-b758-4594-b5e2-736473f9c9e5",
+        "timestamp": "2026-05-05T17:24:43.404315+00:00",
+        "memory_type": "response_summary",
+        "memory_class": "ephemeral",
+        "source_layer": "L2",
+        "source_type": "chat_memory:response_summary",
+        "preview": "[ephemeral/response_summary] | Execution is not verified: the model produced verbal completion without sufficient successful tool-execution evidence. Ask it to complete tool actions first, then return the final answer.",
+        "score": {
+          "semantic_score": 0.41824,
+          "final_score": 0.450742,
+          "decay_mode": "fast",
+          "pinned": false,
+          "importance": 0.3,
+          "confidence": 0.95
+        },
+        "refs": {
+          "chunk_id": "longmemeval_s_batch02_default3_08f4fc43-turn-1-response",
+          "source": "chat:longmemeval_s_batch02_default3_08f4fc43",
+          "path": "",
+          "symbol": "",
+          "collection": "cf_chat_memory",
+          "query_variant": 1
+        }
+      },
+      {
+        "memory_id": "4a7dbd6f-b758-4594-b5e2-736473f9c9e5",
+        "turn_id": 0,
+        "run_id": "4a7dbd6f-b758-4594-b5e2-736473f9c9e5",
+        "timestamp": "",
+        "memory_type": "graph_lineage",
+        "memory_class": "decision",
+        "source_layer": "L3",
+        "source_type": "neo4j",
+        "preview": "nodes=2, edges=1, run_id=4a7dbd6f-b758-4594-b5e2-736473f9c9e5",
+        "score": {
+          "semantic_score": 0.0,
+          "final_score": 0.0,
+          "decay_mode": "none",
+          "pinned": false,
+          "importance": 0.5,
+          "confidence": 0.8
+        },
+        "refs": {
+          "run_id": "4a7dbd6f-b758-4594-b5e2-736473f9c9e5",
+          "node_count": 2,
+          "edge_count": 1
+        }
+      },
+      {
+        "memory_id": "dca77d3b-667e-4890-adbc-8da2ebf1f933",
+        "turn_id": 0,
+        "run_id": "dca77d3b-667e-4890-adbc-8da2ebf1f933",
+        "timestamp": "",
+        "memory_type": "graph_lineage",
+        "memory_class": "decision",
+        "source_layer": "L3",
+        "source_type": "neo4j",
+        "preview": "nodes=0, edges=0, run_id=dca77d3b-667e-4890-adbc-8da2ebf1f933",
+        "score": {
+          "semantic_score": 0.0,
+          "final_score": 0.0,
+          "decay_mode": "none",
+          "pinned": false,
+          "importance": 0.5,
+          "confidence": 0.8
+        },
+        "refs": {
+          "run_id": "dca77d3b-667e-4890-adbc-8da2ebf1f933",
+          "node_count": 0,
+          "edge_count": 0
+        }
+      }
+    ],
+    "chat_recent_turns_budget": {
+      "max_chars_total": 96000,
+      "max_item_chars": 6000,
+      "used_chars": 7119
+    },
+    "chat_recent_turns_stats": {
+      "chat_id": "longmemeval_s_batch02_default3_08f4fc43",
+      "l1_used": 2,
+      "l2_used": 4,
+      "l3_used": 2,
+      "layer_health": {
+        "l1_ok": true,
+        "l2_ok": true,
+        "l3_ok": true,
+        "l1_degraded": false,
+        "l2_degraded": false,
+        "l3_degraded": false,
+        "l2_error_type": "",
+        "l3_error_type": ""
+      },
+      "degraded": false,
+      "degraded_reasons": [],
+      "l2_error": null,
+      "l3_error": null,
+      "fusion_failed": false,
+      "l2_query_variants": 3,
+      "l2_expand_error": null,
+      "global_constraints_used": 0,
+      "l2_attempted": true,
+      "l3_attempted": true,
+      "requested_turns": 2,
+      "kept_turns": 8,
+      "dropped_turns": 0,
+      "source_type_groups": {
+        "L1": 2,
+        "L2": 4,
+        "L3": 2
+      }
+    },
+    "chat_global_constraints": [],
+    "chat_global_constraints_source": "l1_session_list",
+    "chat_global_constraints_status": {
+      "attempted": true,
+      "succeeded": true,
+      "source": "service",
+      "count": 0,
+      "error_type": "",
+      "error_message": ""
+    },
+    "engine_mode": "mainloop_v1",
+    "agent_runtime_used": false,
+    "revision_count": 0,
+    "max_revision_iterations": 1,
+    "revision_performed": false,
+    "revision_target_agent": null,
+    "pipeline": [
+      "mainloop"
+    ],
+    "pipeline_source": "mainloop",
+    "recent_tool_results": [
+      {
+        "evidence_ref": "ev:1:storage.semantic.search",
+        "call_signature": "storage.semantic.search:{\"collection_name\": \"cf_chat_memory\", \"limit\": 5, \"query_text\": \"Sunday mass St. Mary's Church Ash Wednesday cathedral days passed\"}",
+        "semantic_signature": "storage.semantic.search|args={\"collection_name\": \"cf_chat_memory\", \"limit\": 5, \"query_text\": \"Sunday mass St. Mary's Church Ash Wednesday cathedral days passed\"}",
+        "tool_name": "storage.semantic.search",
+        "ok": true,
+        "data_preview": "{\"evidence\": [{\"content\": \"[fact/turn_summary] | Task: Memory ingestion step. Session ID: answer_6ea1541e_1 Session Date: 2023/02/20 (Mon) 21:03 Read and remember the transcript below for future cross-session QA in this same chat. Reply with one short line: INGESTED <Session ID>. [user] I'm thinking of volunteering at a local charity event soon. Do you have ...(microcompact)",
+        "error": {},
+        "arguments_preview": "{\"collection_name\": \"cf_chat_memory\", \"query_text\": \"Sunday mass St. Mary's Church Ash Wednesday cathedral days passed\", \"limit\": 5}",
+        "execution_flag": {
+          "called": true,
+          "executed": true,
+          "ok": true,
+          "permission": "memory_read",
+          "side_effect_capable": false,
+          "state_change_committed": false,
+          "verified_read": true
+        },
+        "goal_check": {
+          "requires_side_effect": false,
+          "target_paths": [],
+          "call_paths": [],
+          "path_match": null,
+          "tool_can_mutate": false,
+          "aligned": true
+        },
+        "workspace_snapshot_version": 0,
+        "snapshot_id": ""
+      }
+    ],
+    "last_parse_error": "",
+    "execution_state": {
+      "progress": "progressing",
+      "goal_progress": "read_verified",
+      "successful_calls": 1,
+      "failed_calls": 0,
+      "side_effect_successful_calls": 0,
+      "verified_read_calls": 1,
+      "last_success_tool": "storage.semantic.search",
+      "last_failed_tool": "",
+      "completion_gate_blocked_count": 0,
+      "control_event_count": 0,
+      "terminal_error_count": 0,
+      "blockers": [],
+      "goal_requires_side_effect": false,
+      "goal_target_path_count": 0,
+      "goal_verified_path_count": 0,
+      "workspace_snapshot_version": 0
+    },
+    "last_model_plan": {
+      "turn": 2,
+      "type": "final_answer",
+      "goal": "Provide the calculated number of days between the two religious services based on retrieved memory evidence.",
+      "success_criteria": "Return the correct integer difference and the specified evidence session IDs in the required format.",
+      "next_step": "Task complete.",
+      "call_count": 0
+    },
+    "goal_contract": {
+      "requires_side_effect": false,
+      "requires_read_proof": false,
+      "target_paths": [],
+      "has_explicit_target_path": false,
+      "intent_kind": "read_only",
+      "source": "model_intent_kind"
+    },
+    "goal_verified_paths": [],
+    "no_progress_repeat_count": 0,
+    "workspace_snapshot_version": 0,
+    "workspace_snapshot": {
+      "reads": {},
+      "lists": {},
+      "workspace_version": 0
+    },
+    "prompt_stats": {
+      "stage": "mainloop_decide",
+      "prompt_version": "v2-layered",
+      "static_cache_hit": true,
+      "chars_total": 14383,
+      "chars_static": 9282,
+      "chars_dynamic": 5099,
+      "dynamic_ratio": 0.3545,
+      "recent_errors_used": 12,
+      "recent_tool_results_used": 24,
+      "tool_catalog_used": 17,
+      "tool_catalog_fingerprint": "3120f4c9e313"
+    },
+    "model_outputs": {
+      "mainloop_turn_1": {
+        "model": "qwen3.6-plus",
+        "response_preview": "{\n  \"type\": \"tool_calls\",\n  \"response\": \"\",\n  \"calls\": [\n    {\n      \"tool_name\": \"storage.semantic.search\",\n      \"arguments\": {\n        \"collection_name\": \"cf_chat_memory\",\n        \"query_text\": \"Sunday mass St. Mary's Church Ash Wednesday cathedral days passed\",\n        \"limit\": 5\n      },\n   ..."
+      },
+      "mainloop_turn_2": {
+        "model": "qwen3.6-plus",
+        "response_preview": "{\n  \"type\": \"final_answer\",\n  \"response\": \"Answer: 3 days\\nEvidenceSessionIDs: answer_6ea1541e_2,answer_6ea1541e_1\",\n  \"calls\": [],\n  \"execution_mode\": \"memory_recall\",\n  \"workflow_decision\": {\n    \"use_quick_answer\": true,\n    \"requires_context\": false,\n    \"selected_agents\": []\n  },\n  \"plan\": {..."
+      }
+    },
+    "last_model_payload": {
+      "type": "final_answer",
+      "response": "Answer: 3 days\nEvidenceSessionIDs: answer_6ea1541e_2,answer_6ea1541e_1",
+      "calls": [],
+      "execution_mode": "memory_recall",
+      "workflow_decision": {
+        "use_quick_answer": true,
+        "requires_context": false,
+        "selected_agents": []
+      },
+      "plan": {
+        "goal": "Provide the calculated number of days between the two religious services based on retrieved memory evidence.",
+        "success_criteria": "Return the correct integer difference and the specified evidence session IDs in the required format.",
+        "next_step": "Task complete."
+      },
+      "goal_contract": {
+        "intent_kind": "read_only",
+        "target_paths": []
+      },
+      "completion": {
+        "outcome": "completed",
+        "needs_side_effect_proof": false,
+        "needs_read_proof": true,
+        "is_complete": true,
+        "evidence_note": "Retrieved session summaries indicate St. Mary's Sunday mass on Feb 19 and Ash Wednesday on Feb 22, yielding a 3-day difference. Evidence IDs match hint.",
+        "evidence_refs": [
+          "ev:1:storage.semantic.search"
+        ],
+        "remaining_blockers": []
+      },
+      "constraint_maintenance": {
+        "enabled": false,
+        "reason": "No session constraints modified."
+      }
+    },
+    "pending_call_arguments": {},
+    "tool_result_seq": 1,
+    "context_compaction": {
+      "mode": "micro",
+      "recent_tool_results_count": 1
+    },
+    "global_constraint_maintenance": {
+      "requested": false,
+      "reason": "No session constraints modified.",
+      "attempted": false,
+      "changed": false,
+      "applied_ops": [],
+      "error": {}
+    },
+    "chat_memory": {
+      "chat_id": "longmemeval_s_batch02_default3_08f4fc43",
+      "turn_id": 3,
+      "memory_id": "longmemeval_s_batch02_default3_08f4fc43-turn-3",
+      "shard_file": "turns-20260505-01.ndjson",
+      "shard_size_bytes": 24150,
+      "retrieval_summary": "Task: Cross-session memory question. Answer using only memories from earlier ingested sessions in this chat. Return plain text with two lines: 1) Answer: <short answer> 2) EvidenceSessionIDs: <comma-separated session IDs> Question: How many days had passed between the Sunday mass at St. Mary's Church and the Ash Wed...",
+      "committed_memory_count": 2,
+      "committed_memory_types": [
+        "turn_summary",
+        "response_summary"
+      ],
+      "committed_memories": [
+        {
+          "chat_id": "longmemeval_s_batch02_default3_08f4fc43",
+          "user_id": "longmemeval-eval",
+          "run_id": "23fd8a91-d6f8-42cc-bb7c-b83a92a3e64d",
+          "turn_id": 3,
+          "timestamp": "2026-05-05T17:25:36.726471+00:00",
+          "confidence": 0.9,
+          "memory_type": "turn_summary",
+          "memory_class": "ephemeral",
+          "importance": 0.2,
+          "decay_mode": "fast",
+          "pinned": false,
+          "memory_id": "longmemeval_s_batch02_default3_08f4fc43-turn-3-summary",
+          "content_preview": "Task: Cross-session memory question. Answer using only memories from earlier ingested sessions in this chat. Return plain text with two lines: 1) Answer: <short answer> 2) EvidenceSessionIDs: <comma-separated session IDs> Question: How many days had passed between the Sunday mass at St. Mary's Church and the Ash Wed...",
+          "refs": {
+            "quality_gate_decision": "",
+            "error_count": 0,
+            "control_event_count": 0
+          },
+          "target_collection": "cf_chat_memory",
+          "decision_source": "model_sidecar_v1",
+          "rationale": "Transitional context for current task flow; low long-term value."
+        },
+        {
+          "chat_id": "longmemeval_s_batch02_default3_08f4fc43",
+          "user_id": "longmemeval-eval",
+          "run_id": "23fd8a91-d6f8-42cc-bb7c-b83a92a3e64d",
+          "turn_id": 3,
+          "timestamp": "2026-05-05T17:25:36.726471+00:00",
+          "confidence": 0.8,
+          "memory_type": "response_summary",
+          "memory_class": "fact",
+          "importance": 0.5,
+          "decay_mode": "normal",
+          "pinned": false,
+          "memory_id": "longmemeval_s_batch02_default3_08f4fc43-turn-3-response",
+          "content_preview": "Answer: 3 days EvidenceSessionIDs: answer_6ea1541e_2,answer_6ea1541e_1",
+          "refs": {
+            "goal_side_effect_done": false,
+            "goal_aligned_side_effect": false
+          },
+          "target_collection": "cf_chat_memory",
+          "decision_source": "model_sidecar_v1",
+          "rationale": "Contains specific factual answer derived from search; useful for immediate verification but not a stable user preference."
+        }
+      ],
+      "write_policy": {
+        "requires_state_change": false,
+        "fact_write_allowed": true,
+        "issue_write_allowed": false,
+        "terminal_error_count": 0,
+        "control_event_count": 0,
+        "issue_suppressed_due_to_terminal_success": false,
+        "has_successful_execution": true,
+        "has_response_summary": true,
+        "has_state_change_committed": false,
+        "has_goal_aligned_state_change": false
+      },
+      "memory_contract_validation_errors": [],
+      "memory_decision_used": true,
+      "memory_decision_source": "model_sidecar_v1",
+      "global_constraints": [],
+      "global_constraints_count": 0
+    },
+    "chat_memory_sidecar": {
+      "attempted": true,
+      "enabled": true,
+      "succeeded": true,
+      "timeout": false,
+      "attempt_count": 1,
+      "fast_retry_used": false,
+      "fallback_used": false,
+      "error_type": "",
+      "error_message": "",
+      "decision_source": "model_sidecar_v1"
+    },
+    "chat_memory_compaction_scheduled": true,
+    "chat_memory_decision": {
+      "decision_source": "model_sidecar_v1",
+      "global_notes_preview": "Task involved retrieving historical session data to compute a time difference. The core output is a factual answer (3 days) supported by specific session IDs.",
+      "validation_error_count": 0
+    },
+    "chat_memory_l2l3_write": {
+      "enabled": true,
+      "strict_required": true,
+      "failed": false,
+      "write_qdrant": true,
+      "write_neo4j": false,
+      "qdrant_collection": "cf_chat_memory",
+      "neo4j_label": "Task",
+      "committed_count": 2,
+      "qdrant_attempted": 2,
+      "qdrant_ok": 2,
+      "qdrant_failed": 0,
+      "neo4j_attempted": 0,
+      "neo4j_ok": 0,
+      "neo4j_failed": 0,
+      "errors": [],
+      "qdrant_collection_counts": {
+        "cf_chat_memory": 2
+      }
+    }
+  },
+  "ok": false,
+  "reason": "wrong_answer"
+}

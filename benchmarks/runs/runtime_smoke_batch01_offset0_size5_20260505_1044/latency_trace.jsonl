@@ -1,0 +1,5 @@
+{"case_id": "runtime.quick_answer.redis_role", "elapsed_s": 29.891, "trace_events": 20, "model_calls": 3, "tool_call_end": 0, "tool_call_error": 0, "terminal_blocks": 0}
+{"case_id": "runtime.project_summary", "elapsed_s": 14.558, "trace_events": 9, "model_calls": 3, "tool_call_end": 0, "tool_call_error": 0, "terminal_blocks": 0}
+{"case_id": "runtime.code_generation.average", "elapsed_s": 14.979, "trace_events": 9, "model_calls": 3, "tool_call_end": 0, "tool_call_error": 0, "terminal_blocks": 0}
+{"case_id": "runtime.release_eval_plan", "elapsed_s": 19.84, "trace_events": 9, "model_calls": 3, "tool_call_end": 0, "tool_call_error": 0, "terminal_blocks": 0}
+{"case_id": "runtime.storage_boundaries", "elapsed_s": 23.87, "trace_events": 11, "model_calls": 4, "tool_call_end": 0, "tool_call_error": 0, "terminal_blocks": 0}

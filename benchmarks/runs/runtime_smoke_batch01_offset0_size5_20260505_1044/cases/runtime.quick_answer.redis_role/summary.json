@@ -1,0 +1,44 @@
+{
+  "case_id": "runtime.quick_answer.redis_role",
+  "category": "runtime_smoke",
+  "started_at": "2026-05-05T02:43:40+00:00",
+  "elapsed_s": 29.891,
+  "ok": true,
+  "validation": {
+    "ok": true,
+    "reason": "",
+    "details": ""
+  },
+  "model": "qwen3.6-plus-2026-04-02",
+  "run_id": "5ba51b3d-6dbb-45df-95d9-ad63ec86e7de",
+  "workflow_decision": {
+    "execution_mode": "quick_answer",
+    "next_node": "final_answer",
+    "skip_research": true,
+    "skip_debate": true,
+    "use_quick_answer": true,
+    "requires_context": false,
+    "requires_debate": false,
+    "max_iterations": 1,
+    "selected_agents": [],
+    "rationale": "model_driven",
+    "policy_version": "mainloop_v1",
+    "metadata": {
+      "source": "model_mainloop",
+      "turn": 1
+    },
+    "constraint_maintenance": {
+      "enabled": false,
+      "reason": "No durable session constraints added or modified."
+    }
+  },
+  "trace_counts": {
+    "trace_events": 20,
+    "model_calls": 3,
+    "tool_call_end": 0,
+    "tool_call_error": 0,
+    "terminal_blocks": 0
+  },
+  "response_preview": "Redis serves as the high-performance caching and session state store for Self AI, enabling fast retrieval of conversation history and intermediate execution results.",
+  "error": null
+}

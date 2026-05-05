@@ -1,0 +1,16 @@
+{"case_id": "gpt4_2655b836", "type": "ingest", "turn_index": 1, "elapsed_s": 124.219}
+{"case_id": "gpt4_2655b836", "type": "ingest", "turn_index": 2, "elapsed_s": 100.585}
+{"case_id": "gpt4_2655b836", "type": "ingest", "turn_index": 3, "elapsed_s": 30.888}
+{"case_id": "gpt4_2655b836", "type": "query", "turn_index": 1, "elapsed_s": 21.226}
+{"case_id": "gpt4_2487a7cb", "type": "ingest", "turn_index": 1, "elapsed_s": 82.223}
+{"case_id": "gpt4_2487a7cb", "type": "ingest", "turn_index": 2, "elapsed_s": 66.47}
+{"case_id": "gpt4_2487a7cb", "type": "query", "turn_index": 1, "elapsed_s": 24.642}
+{"case_id": "gpt4_76048e76", "type": "ingest", "turn_index": 1, "elapsed_s": 28.944}
+{"case_id": "gpt4_76048e76", "type": "ingest", "turn_index": 2, "elapsed_s": 48.563}
+{"case_id": "gpt4_76048e76", "type": "query", "turn_index": 1, "elapsed_s": 31.95}
+{"case_id": "gpt4_2312f94c", "type": "ingest", "turn_index": 1, "elapsed_s": 103.771}
+{"case_id": "gpt4_2312f94c", "type": "ingest", "turn_index": 2, "elapsed_s": 112.622}
+{"case_id": "gpt4_2312f94c", "type": "query", "turn_index": 1, "elapsed_s": 23.916}
+{"case_id": "0bb5a684", "type": "ingest", "turn_index": 1, "elapsed_s": 32.968}
+{"case_id": "0bb5a684", "type": "ingest", "turn_index": 2, "elapsed_s": 80.747}
+{"case_id": "0bb5a684", "type": "query", "turn_index": 1, "elapsed_s": 21.906}

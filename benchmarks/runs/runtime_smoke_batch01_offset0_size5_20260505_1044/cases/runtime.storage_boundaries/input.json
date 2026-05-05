@@ -1,0 +1,10 @@
+{
+  "case_id": "runtime.storage_boundaries",
+  "category": "runtime_smoke",
+  "prompt": "Summarize the separate roles of Redis, Qdrant, and Neo4j in this project. Keep it under 90 words.",
+  "expect_substrings": [
+    "redis",
+    "qdrant",
+    "neo4j"
+  ]
+}

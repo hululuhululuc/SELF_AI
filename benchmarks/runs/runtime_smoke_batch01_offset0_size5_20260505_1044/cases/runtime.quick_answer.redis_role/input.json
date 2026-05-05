@@ -1,0 +1,8 @@
+{
+  "case_id": "runtime.quick_answer.redis_role",
+  "category": "runtime_smoke",
+  "prompt": "In one concise sentence, explain Redis' role in this Self AI project.",
+  "expect_substrings": [
+    "redis"
+  ]
+}

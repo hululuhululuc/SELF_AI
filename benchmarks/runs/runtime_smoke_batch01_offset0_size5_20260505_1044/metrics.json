@@ -1,0 +1,19 @@
+{
+  "schema_version": "light_public_eval.v1",
+  "generated_at": "2026-05-05T02:44:54+00:00",
+  "total_cases": 5,
+  "ok_cases": 5,
+  "failed_cases": 0,
+  "workflow_ok_rate": 1.0,
+  "latency_avg_s": 20.628,
+  "latency_p50_s": 19.84,
+  "latency_p95_s": 28.687,
+  "avg_model_calls": 3.2,
+  "avg_tool_calls": 0,
+  "failure_reasons": {},
+  "selected_case_count": 5,
+  "executed_case_count": 5,
+  "offset": 0,
+  "batch_size": 5,
+  "stopped_early": false
+}

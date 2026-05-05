@@ -1,0 +1,23 @@
+[
+  {
+    "case": "B",
+    "mode": "ON",
+    "chat_id": "m2eval_after_patch_abcde-b-on",
+    "type": "ValidationFailed",
+    "reason": "final_content_mismatch"
+  },
+  {
+    "case": "D",
+    "mode": "ON",
+    "chat_id": "m2eval_after_patch_abcde-d-on",
+    "type": "ValidationFailed",
+    "reason": "missing_redis"
+  },
+  {
+    "case": "E",
+    "mode": "ON",
+    "chat_id": "m2eval_after_patch_abcde-e-on",
+    "type": "ValidationFailed",
+    "reason": "compaction_not_observed"
+  }
+]

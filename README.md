@@ -1,375 +1,236 @@
-# 🔨 CodeForge AI
+﻿# Self AI
 
-<div align="center">
+> **Large model capability is all you need.**
 
-[![Python](https://img.shields.io/badge/python-3.12%2B-blue.svg?style=flat&logo=python&logoColor=white)](https://www.python.org/)
-[![LangGraph](https://img.shields.io/badge/LangGraph-0.5.3%2B-orange.svg?style=flat)](https://github.com/langchain-ai/langgraph)
-[![Neo4j](https://img.shields.io/badge/Neo4j-5.28.1%2B-green.svg?style=flat&logo=neo4j&logoColor=white)](https://neo4j.com/)
-[![Qdrant](https://img.shields.io/badge/Qdrant-1.15.0%2B-purple.svg?style=flat)](https://qdrant.tech/)
-[![Redis](https://img.shields.io/badge/Redis-6.0.0%2B-red.svg?style=flat&logo=redis&logoColor=white)](https://redis.io/)
-[![Docker](https://img.shields.io/badge/Docker-Compose-blue.svg?style=flat&logo=docker&logoColor=white)](https://www.docker.com/)
-[![License](https://img.shields.io/badge/License-MIT-yellow.svg?style=flat)](LICENSE)
+Self AI is a model-centered coding agent framework.
+The core philosophy is simple: let the model own decision-making, while the system enforces boundaries, permissions, tool execution, and observable failure semantics.
 
-**Autonomous multi-agent system forging code from ideas to deployment**
+Production path:
 
-[Features](#-features) • [Quick Start](#-quick-start) • [Architecture](#-architecture) • [Documentation](#-documentation) • [Citation](#-citation)
+`run_autonomy_workflow -> SelfAIKernel.run -> EngineLoop (MainLoop) -> ToolRuntime`
 
-</div>
+## Repository Scope
 
----
+This open-source repository intentionally does **not** include:
 
-## 📑 Table of Contents
+- Large local model assets under `self_ai/model/`
+- Full local runtime logs and debug traces (for example large raw traces outside curated release artifacts)
 
-- [🔨 CodeForge AI](#-codeforge-ai)
-  - [📑 Table of Contents](#-table-of-contents)
-  - [✨ Features](#-features)
-    - [Phase 1: Core Autonomy (MVP)](#phase-1-core-autonomy-mvp)
-    - [Phase 2: Advanced Extensions](#phase-2-advanced-extensions)
-  - [🚀 Quick Start](#-quick-start)
-  - [🏗️ Architecture](#️-architecture)
-    - [System Overview](#system-overview)
-    - [Multi-Agent Debate](#multi-agent-debate)
-    - [GraphRAG+ Hybrid Retrieval](#graphrag-hybrid-retrieval)
-  - [📦 Installation](#-installation)
-    - [Prerequisites](#prerequisites)
-    - [Development Setup](#development-setup)
-  - [⚙️ Configuration](#️-configuration)
-    - [Environment Variables](#environment-variables)
-    - [Model Routing Configuration](#model-routing-configuration)
-  - [📖 Usage](#-usage)
-    - [Basic Autonomy Workflow](#basic-autonomy-workflow)
-    - [Advanced Debate Configuration](#advanced-debate-configuration)
-    - [Custom Retrieval](#custom-retrieval)
-  - [📊 Performance](#-performance)
-    - [Key Dependencies](#key-dependencies)
-  - [📚 Documentation](#-documentation)
-  - [🤝 Contributing](#-contributing)
-  - [📝 Citation](#-citation)
-  - [📄 License](#-license)
+This repository **does include** a curated benchmark evidence subset used by this README (selected files under `benchmarks/runs/` and `docs/memory_eval_v2/summary/`).
 
-## ✨ Features
+To reproduce full evaluations, prepare your own model assets and run the benchmark scripts locally.
 
-### Phase 1: Core Autonomy (MVP)
+## Why Self AI
 
-| Feature | Description | Impact |
-|---------|-------------|--------|
-| 🧠 **Multi-Agent Orchestration** | LangGraph-based hierarchical agent coordination | 95% task completion rate |
-| 🔍 **GraphRAG+ Retrieval** | Hybrid graph + vector search with web fallback | 30-40% accuracy boost |
-| 🎯 **Dynamic Model Routing** | Intelligent selection across 5 specialized models | 25% performance gain |
-| 💬 **3-Agent Debate** | Proponent/Opponent/Moderator for complex decisions | 30% hallucination reduction |
-| 📊 **Hybrid Task Management** | In-memory deque + Redis for low-latency coordination | <100ms task assignment |
-| 🔄 **Shared State Management** | Anti-hallucination through synchronized context | 40% consistency improvement |
+- Model-first runtime: MainLoop asks the model to choose between `final_answer` and `tool_calls` every turn.
+- Strict execution semantics: state-change tasks require side-effect evidence; read-proof can be explicitly gated.
+- Evidence-aware memory stack: L1/L2/L3 memory can be injected and traced.
+- Artifact-first evaluation: each benchmark run stores machine-readable metrics and human-readable reports.
 
-### Phase 2: Advanced Extensions
-
-| Feature | Description | Impact |
-|---------|-------------|--------|
-| 👁️ **Multi-Modal Support** | Vision SDK for UI/image analysis | 20% accuracy in web tasks |
-| 🔤 **SPLADE Hybrid Embeddings** | Sparse+dense retrieval fusion | 15% precision boost |
-| 👥 **5-Agent Extended Debate** | Add Advocate/Critic for complex reasoning | 10% decision quality gain |
-| 🔐 **Federated Learning** | Privacy-preserving collaborative improvement | Local model personalization |
-| 📈 **Enhanced Scalability** | Kubernetes orchestration for 100+ agents | 10x capacity increase |
-
-## 🚀 Quick Start
-
-```bash
-# Clone repository
-git clone https://github.com/BjornMelin/codeforge
-cd codeforge
-
-# Install uv (if not already installed)
-curl -LsSf https://astral.sh/uv/install.sh | sh
-
-# Install dependencies with uv
-uv venv
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-uv pip install -e .
-
-# Start services
-docker-compose up -d
-
-# Configure environment
-cp .env.example .env
-# Edit .env with your API keys
-
-# Run autonomous workflow
-python -m codeforge.main "Generate a REST API for user management"
-```
-
-## 🏗️ Architecture
-
-### System Overview
+## End-to-End Architecture Flow
 
 ```mermaid
-graph TB
-    subgraph "Input Layer"
-        PRD[PRD/Ideas]
-        Task[Task Queue]
-    end
-    
-    subgraph "Orchestration Layer"
-        LG[LangGraph StateGraph]
-        TM[Task Manager]
-        MS[Model Router]
-    end
-    
-    subgraph "Agent Layer"
-        TA[Task Analyzer]
-        RA[Research Agent]
-        DA[Debate Agents]
-        CA[Code Agent]
-        QA[Quality Agent]
-    end
-    
-    subgraph "Memory Layer"
-        GR[GraphRAG+]
-        SM[Shared State]
-        LTM[Long-term Memory]
-    end
-    
-    subgraph "Infrastructure"
-        N4J[Neo4j]
-        QD[Qdrant]
-        RD[Redis]
-    end
-    
-    PRD --> Task --> LG
-    LG --> TM --> MS
-    MS --> TA & RA & DA & CA & QA
-    RA <--> GR
-    DA <--> SM
-    GR <--> N4J & QD
-    SM <--> RD
-    LTM <--> RD
+flowchart TD
+    U[User Input] --> A[run_autonomy_workflow<br/>self_ai/main.py]
+    A --> B[SelfAIKernel.run<br/>self_ai/kernel]
+    B --> C[EngineLoop MainLoop]
+
+    C --> D[Goal Contract Inference<br/>intent_kind / requires_side_effect / requires_read_proof]
+    D --> E[Prompt Runtime Assembly<br/>task + context + memory + tool schema]
+    E --> F[Model Call via Router<br/>self_ai/router.py]
+
+    F --> G{Model Decision}
+    G -->|tool_calls| H[ToolRuntime Execute]
+    H --> I[Adapters Layer<br/>workspace / storage / memory / graph / shell / web]
+    I --> J[Tool Results + Execution Flags<br/>verified_read / side_effect_success]
+    J --> C
+
+    G -->|final_answer| K[Completion Gate Check]
+    K -->|pass| L[Finalize Response + Metadata]
+    K -->|block| C
+
+    L --> M[Return API Payload<br/>response/model/errors/metadata]
 ```
 
-### Multi-Agent Debate
+## MainLoop Sequence (Single Response Lifecycle)
 
 ```mermaid
 sequenceDiagram
-    participant O as Orchestrator
-    participant P as Proponent
-    participant C as Opponent
-    participant M as Moderator
-    
-    O->>P: Present proposal
-    O->>C: Present proposal
-    
-    par Round 1
-        P->>M: Arguments FOR
-        C->>M: Arguments AGAINST
+    participant User
+    participant Main as run_autonomy_workflow
+    participant Kernel as SelfAIKernel
+    participant Engine as EngineLoop
+    participant Router as route_model
+    participant Runtime as ToolRuntime
+    participant Tool as Adapters/Tools
+
+    User->>Main: task / question
+    Main->>Kernel: run(input, session_id, metadata)
+    Kernel->>Engine: initialize EngineState
+
+    loop MainLoop turn
+        Engine->>Router: model.generate(compiled prompt)
+        Router-->>Engine: final_answer or tool_calls
+
+        alt tool_calls
+            Engine->>Runtime: execute(tool_calls)
+            Runtime->>Tool: run tool(s)
+            Tool-->>Runtime: tool outputs
+            Runtime-->>Engine: normalized results + execution flags
+            Engine->>Engine: update state, evidence counters, control events
+        else final_answer
+            Engine->>Engine: semantic completion gate
+            alt gate passes
+                Engine-->>Kernel: finalized result
+            else gate blocks
+                Engine->>Engine: emit block reason and continue next turn
+            end
+        end
     end
-    
-    M->>M: Synthesize & Vote
-    
-    alt Consensus Reached
-        M->>O: Final Decision
-    else No Consensus
-        M->>O: Refine Proposal
-        Note over O,M: Repeat up to 2 rounds
-    end
+
+    Kernel-->>Main: result payload
+    Main-->>User: response + metadata + traces
 ```
 
-### GraphRAG+ Hybrid Retrieval
+## Capability Snapshot (from Real Run Artifacts)
 
-```mermaid
-flowchart LR
-    Q[Query] --> VE[Vector Embeddings]
-    Q --> GE[Graph Traversal]
-    
-    VE --> QDR[(Qdrant)]
-    GE --> N4JR[(Neo4j)]
-    
-    QDR --> F[Fusion Layer]
-    N4JR --> F
-    
-    F --> R{Empty?}
-    R -->|Yes| WS[Web Search]
-    R -->|No| RES[Results]
-    
-    WS --> TAV[Tavily/Exa]
-    TAV --> IDX[Index Results]
-    IDX --> RES
+All metrics below are from local artifacts under `benchmarks/runs` (2026-05-05 to 2026-05-06).
+
+### 1) Execution Reliability
+
+| Metric | Result | Artifact |
+|---|---:|---|
+| Runtime smoke workflow success | **5/5 (100%)** | `runtime_smoke_batch01_offset0_size5_20260505_1044/metrics.json` |
+| Runtime smoke avg latency | 20.628s | same |
+| Runtime smoke p95 latency | 28.687s | same |
+| Public real-eval completion | **25/25 executed (100%)** | `public_real_eval_25_humaneval_bfcl_simpleqa_20260505_1136/summary.json` |
+
+### 2) Structured Tool-Calling Quality (BFCL)
+
+| Metric | Result | Artifact |
+|---|---:|---|
+| Schema valid rate | **1.0** | `public_real_eval_25_humaneval_bfcl_simpleqa_20260505_1136/summary.json` |
+| Function name accuracy | **1.0** | same |
+| Argument exact match | **0.9 (9/10)** | same |
+| Task success rate | **0.9 (9/10)** | same |
+
+### 3) Code Ability Slices
+
+| Metric | Result | Artifact |
+|---|---:|---|
+| HumanEval+ pass@1 (slice) | **1.0 (5/5)** | `public_real_eval_25_humaneval_bfcl_simpleqa_20260505_1136/summary.json` |
+| HumanEval+ syntax pass rate | **1.0** | same |
+| SWE-Lite replace-edit patch apply rate | **0.7 (7/10)** | `swebench_lite_l1_replace_mini10_summary_20260505_1538/summary.json` |
+
+### 4) Long-Context Memory Grounding
+
+LongMemEval-S mini10 baseline vs rerun (default tier, valid completed runs):
+
+| Metric | Baseline | Rerun | Delta |
+|---|---:|---:|---:|
+| Answer accuracy | 0.2 | **0.4** | +0.2 |
+| Evidence hit rate | 0.3 | **1.0** | +0.7 |
+| Memory recall rate | 0.2 | **0.4** | +0.2 |
+
+Sources:
+- `longmemeval_s_mini10_summary_20260505_1644/summary.json`
+- `longmemeval_s_batch01_offset0_size5_20260506_default3/metrics.json`
+- `longmemeval_s_batch02_offset5_size5_20260506_default3/metrics.json`
+
+Self-defined ABCDE memory regression (`docs/memory_eval_v2/summary/metrics.json`):
+
+- L1/L2/L3 all-layer hit rate: **5/5 (100%)**
+- Total hits: `L1=52`, `L2=103`, `L3=33`
+
+## Quick Start (Windows PowerShell)
+
+1. Enter project directory.
+
+```powershell
+cd self-ai
 ```
 
-## 📦 Installation
+2. Create and prepare virtual environment.
 
-### Prerequisites
-
-- Python 3.12+
-- Docker & Docker Compose
-- 8GB+ RAM (16GB recommended)
-- CUDA GPU (optional, for embeddings)
-
-### Development Setup
-
-```bash
-# Clone and install
-git clone https://github.com/BjornMelin/codeforge
-cd codeforge
-
-# Create virtual environment and install
-uv venv
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-uv pip install -e .
-
-# Install with development dependencies
-uv pip install -e ".[dev]"
-
-# GPU support (optional)
-uv pip install -e ".[gpu]"
-
-# Lock dependencies for reproducibility
-uv lock
-
-# Run tests
-uv run pytest
-
-# Format code
-uv run ruff format .
+```powershell
+python -m venv .venv
+.\.venv\Scripts\python.exe -m pip install -U pip
+.\.venv\Scripts\python.exe -m pip install -e ".[dev,ui]"
 ```
 
-## ⚙️ Configuration
+3. Configure env.
 
-### Environment Variables
-
-| Variable | Description | Default |
-|----------|-------------|---------|
-| `CF_USE_ASYNC` | Enable async DB operations | `false` |
-| `CF_USE_SPARSE` | Enable SPLADE embeddings | `false` |
-| `CF_USE_GPU` | Enable GPU acceleration | `false` |
-| `CF_USE_STRUCTURED` | Enable structured outputs | `false` |
-| `OPENROUTER_API_KEY` | OpenRouter API key | Required |
-| `TAVILY_API_KEY` | Tavily search API key | Required |
-| `QDRANT_URL` | Qdrant service URL | `http://localhost:6333` |
-| `NEO4J_URI` | Neo4j connection URI | `bolt://localhost:7687` |
-| `REDIS_HOST` | Redis host | `localhost` |
-
-### Model Routing Configuration
-
-| Model | Usage % | Specialization |
-|-------|---------|----------------|
-| Grok-4 | ~40% | Complex reasoning, architecture |
-| Claude-4 | ~30% | Code generation, refactoring |
-| Kimi K2 | ~20% | General tasks, prototyping |
-| Gemini Flash | ~10% | Quick queries, low latency |
-| o3 | <5% | Mathematical optimization |
-
-## 📖 Usage
-
-### Basic Autonomy Workflow
-
-```python
-from codeforge import run_autonomy_workflow
-
-# Generate complete feature
-result = await run_autonomy_workflow(
-    "Create a user authentication system with JWT"
-)
+```powershell
+copy .env.example .env
 ```
 
-### Advanced Debate Configuration
+Set at least:
 
-```python
-from codeforge import debate_subgraph, State
+- `DASHSCOPE_API_KEY`
 
-# Configure 5-agent debate for complex decisions
-state = State(task="Design microservices architecture")
-result = await debate_subgraph.ainvoke(
-    state, 
-    config={"agents": 5, "rounds": 3}
-)
+Recommended:
+
+- `SELF_AI_PERMISSION_MODE=dev_write`
+- `SELF_AI_SHELL_ENABLED=false`
+
+4. Start dependency services.
+
+```powershell
+docker compose up -d
+docker compose ps
 ```
 
-### Custom Retrieval
+5. Start frontend.
 
-```python
-from codeforge import graphrag_plus
-
-# Hybrid retrieval with content-aware embeddings
-results = await graphrag_plus(
-    query="async patterns in Python",
-    content_type="code"  # Uses 384D embeddings
-)
+```powershell
+.\.venv\Scripts\python.exe -m streamlit run self_ai/frontend_app.py
 ```
 
-## 📊 Performance
+## Main Runtime Contracts
 
-| Metric | Target | Achieved |
-|--------|--------|----------|
-| Task Completion Rate | >95% | ✅ 97% |
-| Response Latency | <100ms | ✅ 85ms |
-| Retrieval Accuracy | +30% | ✅ +35% |
-| Hallucination Rate | <10% | ✅ 7% |
-| Monthly Cost | <$200 | ✅ $150 |
+- `readonly`: read-only mode.
+- `dev_write`: workspace write allowed within project root.
+- `dev_full`: optional shell execution, still guarded by allowlist/denylist.
 
-### Key Dependencies
+Safety constraints:
 
-- **LangGraph** ≥0.5.3 - Enhanced persistence and streaming
-- **Qdrant** ≥1.15.0 - Async batch operations and Query API
-- **Neo4j** ≥5.28.1 - Latest LTS with Bolt efficiency
-- **Redis** ≥6.0.0 - New dialect and client-side caching
-- **Sentence Transformers** ≥5.0.0 - v5.0 with SparseEncoder/hybrid
-- **OpenAI** ≥1.97.0 - Structured outputs and fine-tuning
-- **PyTorch** ≥2.7.1 - Latest compile and quantization (GPU extra)
+- Workspace operations are constrained to `project_root`.
+- Path traversal and symlink escape are rejected.
+- Completion gate can enforce read/side-effect evidence before final answer commit.
 
-## 📚 Documentation
+## Project Layout
 
-- [Architecture Decision Records (ADRs)](docs/adrs/)
-- [Product Requirements Document (PRD)](docs/prd.md)
-- [API Documentation](docs/api.md)
-- [Deployment Guide](docs/deployment.md)
+- `self_ai/main.py`: workflow entrypoint.
+- `self_ai/kernel/`: kernel, mainloop, prompt runtime, state store.
+- `self_ai/runtime/`: tool runtime, permission guard, registry.
+- `self_ai/adapters/`: model/tool/storage/memory adapters.
+- `self_ai/memory/`, `self_ai/retrieval/`, `self_ai/graph/`: memory and retrieval subsystems.
+- `scripts/`: benchmark runners and validation scripts.
+- `benchmarks/`: public subset specs, predictions, run artifacts.
+- `tests/`: unit/integration tests.
 
-## 🤝 Contributing
+## Reproducibility and Benchmark Artifacts
 
-We welcome contributions! Please see our [Contributing Guide](CONTRIBUTING.md) for details.
+Every run writes reproducible artifacts such as:
 
-```bash
-# Fork and clone
-git clone https://github.com/YOUR_USERNAME/codeforge
-cd codeforge
+- `metrics.json`
+- `report.md`
+- `failures.json` (when available)
+- per-case traces under `cases/`
 
-# Create feature branch
-git checkout -b feature/amazing-feature
+Example command:
 
-# Set up development environment
-uv venv
-source .venv/bin/activate
-uv pip install -e ".[dev]"
-
-# Make changes and test
-uv run pytest
-
-# Format code
-uv run ruff format .
-
-# Submit PR
+```powershell
+.\.venv\Scripts\python.exe scripts/light_public_eval_runner.py --stage runtime_smoke
 ```
 
-## 📝 Citation
+## Transparency Notes
 
-If you use CodeForge AI in your research or project, please cite:
+- Mini benchmarks are fixed public subsets, not official leaderboard submissions.
+- External quota failures (for example `quota_exhausted`) are treated as infrastructure blockers, not model-quality conclusions.
+- SWE replace-edit metrics indicate patch executability in this setup, not full official issue-resolution claims.
+- Large local model files and full local debug logs are excluded from this repository by design; only curated benchmark evidence needed for README claims is included.
 
-```bibtex
-@software{melin2025codeforge,
-  author = {Melin, Bjorn},
-  title = {CodeForge AI: Autonomous Multi-Agent System for Software Development},
-  year = {2025},
-  url = {https://github.com/BjornMelin/codeforge},
-  version = {0.1.0}
-}
-```
+## License
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-<div align="center">
-
-⭐ **Star us on GitHub** — it helps!
-
-[![GitHub stars](https://img.shields.io/github/stars/BjornMelin/codeforge.svg?style=social)](https://github.com/BjornMelin/codeforge/stargazers)
-
-</div>
+MIT

@@ -1,0 +1,44 @@
+{
+  "case_id": "runtime.release_eval_plan",
+  "category": "runtime_smoke",
+  "started_at": "2026-05-05T02:44:30+00:00",
+  "elapsed_s": 19.84,
+  "ok": true,
+  "validation": {
+    "ok": true,
+    "reason": "",
+    "details": ""
+  },
+  "model": "qwen3.6-plus-2026-04-02",
+  "run_id": "156899cd-6e86-45ff-9817-dde0c1a45d3f",
+  "workflow_decision": {
+    "execution_mode": "direct_answer",
+    "next_node": "final_answer",
+    "skip_research": true,
+    "skip_debate": true,
+    "use_quick_answer": true,
+    "requires_context": false,
+    "requires_debate": false,
+    "max_iterations": 1,
+    "selected_agents": [],
+    "rationale": "model_driven",
+    "policy_version": "mainloop_v1",
+    "metadata": {
+      "source": "model_mainloop",
+      "turn": 1
+    },
+    "constraint_maintenance": {
+      "enabled": false,
+      "reason": ""
+    }
+  },
+  "trace_counts": {
+    "trace_events": 9,
+    "model_calls": 3,
+    "tool_call_end": 0,
+    "tool_call_error": 0,
+    "terminal_blocks": 0
+  },
+  "response_preview": "Here are three key bullet points for evaluating a coding-agent project before a GitHub release:\n\n*   **Robustness and Error Handling**: Verify that the agent gracefully handles edge cases, ambiguous instructions, and API failures without crashing or entering infinite loops, ensuring stable operation in diverse environments.\n*   **Security and Sandboxing**: Confirm that code execution is properly sandboxed to prevent arbitrary system access, and that sensitive data (like API keys) is never expose",
+  "error": null
+}

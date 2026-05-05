@@ -1,0 +1,9 @@
+{
+  "case_id": "runtime.code_generation.average",
+  "category": "runtime_smoke",
+  "prompt": "Return a Python function named average that computes the average of a list and raises ValueError for an empty list. Do not create files.",
+  "expect_substrings": [
+    "def average",
+    "ValueError"
+  ]
+}

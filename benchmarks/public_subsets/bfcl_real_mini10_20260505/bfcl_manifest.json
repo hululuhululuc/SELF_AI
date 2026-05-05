@@ -1,0 +1,20 @@
+{
+  "dataset": "Berkeley Function Calling Leaderboard v3 simple",
+  "source_url": "https://huggingface.co/datasets/gorilla-llm/Berkeley-Function-Calling-Leaderboard/resolve/main/BFCL_v3_simple.json",
+  "answer_source_url": "https://huggingface.co/datasets/gorilla-llm/Berkeley-Function-Calling-Leaderboard/resolve/main/possible_answer/BFCL_v3_simple.json",
+  "case_count": 10,
+  "cases_path": "D:\\codex_ws\\codingagent\\codeforge\\benchmarks\\public_subsets\\bfcl_real_mini10_20260505\\bfcl_cases.jsonl",
+  "raw_path": "D:\\codex_ws\\codingagent\\codeforge\\benchmarks\\public_subsets\\bfcl_real_mini10_20260505\\raw\\bfcl_raw.jsonl",
+  "case_ids": [
+    "simple_0",
+    "simple_1",
+    "simple_2",
+    "simple_3",
+    "simple_4",
+    "simple_5",
+    "simple_6",
+    "simple_7",
+    "simple_8",
+    "simple_9"
+  ]
+}

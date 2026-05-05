@@ -1,0 +1,17 @@
+{
+  "schema_version": "light_public_eval.preflight.v1",
+  "generated_at": "2026-05-05T02:43:10+00:00",
+  "checks": {
+    "dashscope_api_key_loaded": true,
+    "redis_enabled": true,
+    "qdrant_url": "http://localhost:6333",
+    "neo4j_enabled": true,
+    "embedder_prewarm": true,
+    "embedder_path": "D:\\codex_ws\\codingagent\\codeforge\\self_ai\\model\\bge-m3",
+    "embedder_path_exists": true,
+    "chat_memory_enabled": true,
+    "chat_memory_fusion_enabled": true
+  },
+  "warnings": [],
+  "ok": true
+}

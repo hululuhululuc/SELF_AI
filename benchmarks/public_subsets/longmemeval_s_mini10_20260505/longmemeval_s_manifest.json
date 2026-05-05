@@ -1,0 +1,21 @@
+{
+  "dataset": "LongMemEval-S",
+  "source": "LIXINYI33/longmemeval-s",
+  "source_url": "https://huggingface.co/datasets/LIXINYI33/longmemeval-s",
+  "case_count": 10,
+  "cases_path": "D:\\codex_ws\\codingagent\\codeforge\\benchmarks\\public_subsets\\longmemeval_s_mini10_20260505\\longmemeval_s_cases.jsonl",
+  "raw_path": "D:\\codex_ws\\codingagent\\codeforge\\benchmarks\\public_subsets\\longmemeval_s_mini10_20260505\\raw\\longmemeval_s_raw.jsonl",
+  "case_ids": [
+    "gpt4_2655b836",
+    "gpt4_2487a7cb",
+    "gpt4_76048e76",
+    "gpt4_2312f94c",
+    "0bb5a684",
+    "08f4fc43",
+    "2c63a862",
+    "gpt4_385a5000",
+    "2a1811e2",
+    "bbf86515"
+  ],
+  "note": "Each case includes haystack sessions, dates, and answer_session_ids for long-memory evaluation."
+}

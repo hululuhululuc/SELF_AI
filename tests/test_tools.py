@@ -1,100 +1,64 @@
-# coding=utf-8
-"""Tests for retrieval tools in CodeForge AI.
+﻿# coding=utf-8
+"""Unit tests for tools module with full mocking."""
 
-This module contains unit and integration tests for GraphRAG+ functionality.
-"""
-
-from typing import Any
 from unittest.mock import AsyncMock, patch
 
 import pytest
 
-from ..config import settings
-from ..tools import graphrag_plus
+from self_ai import tools
+from self_ai.retrieval.query_planner import RetrievalPlan
 
 
 @pytest.mark.asyncio
-async def test_graphrag_plus_web_trigger() -> None:
-    """Test GraphRAG+ with web fallback when vector results empty;
-    real-world: query for 'python async best practices'."""
+async def test_graphrag_plus_code_query_skips_web_fallback() -> None:
+    plan = RetrievalPlan(
+        intent="code_generation",
+        collections=["cf_code_chunks", "cf_doc_chunks"],
+        top_k=5,
+        min_score=0.0,
+        use_vector=True,
+        use_web=False,
+        collection_weights={},
+    )
     with (
+        patch("self_ai.tools._encode_text", return_value=[0.1, 0.2]),
+        patch.object(tools.query_planner, "build", return_value=plan),
         patch(
-            "..tools.qdrant.aquery", new_callable=AsyncMock, return_value=[]
-        ) as mock_qdrant,
-        patch(
-            "..tools.tavily.search",
-            return_value=[
-                {
-                    "content": "Async best practices: use asyncio.gather for concurrency."
-                }
-            ],
-        ) as mock_tavily,
-        patch(
-            "..tools.neo4j_driver.session", new_callable=AsyncMock
-        ) as mock_session,
-        patch.object(settings, "use_async", True),
-        patch.object(settings, "use_sparse", False),
+            "self_ai.tools._search_plan_collections",
+            new=AsyncMock(return_value=[{"content": "code chunk", "source_type": "code", "score": 0.9}]),
+        ),
+        patch("self_ai.tools.tavily.search") as mocked_web,
     ):
-        mock_session.return_value.run = AsyncMock(
-            return_value=[{"n": {"content": "Graph node on async."}}]
-        )
-        results: list[dict[str, Any]] = await graphrag_plus(
-            "python async best practices"
-        )
-        assert len(results) == 11, (
-            "Expected fused results including web/indexed"
-        )  # Insight: Web adds 1, graph 1, re-query 9
-        assert any("asyncio.gather" in str(r) for r in results), (
-            "Expected real-world async insight from web"
-        )
-        mock_tavily.assert_called_once_with(
-            query="python async best practices", max_results=5
-        )  # Coverage: Trigger
-        mock_qdrant.assert_called()  # Coverage: Re-query after upsert
+        result = await tools.graphrag_plus("write python function", content_type="code")
+    assert len(result) == 1
+    mocked_web.assert_not_called()
 
 
 @pytest.mark.asyncio
-async def test_graphrag_plus_sparse_sort() -> None:
-    """Test sparse toggle with sorting; real-world: code query for
-    'def add(a, b): return a + b' expecting high sparse score."""
-    mock_results = [
-        {"sparse_score": 0.9, "content": "add function code"},
-        {"sparse_score": 0.5, "content": "other"},
-    ]
+async def test_graphrag_plus_general_query_uses_web_fallback_on_empty_vector() -> None:
+    plan = RetrievalPlan(
+        intent="general_qa",
+        collections=["cf_doc_chunks"],
+        top_k=5,
+        min_score=0.0,
+        use_vector=True,
+        use_web=False,
+        collection_weights={},
+    )
     with (
-        patch("..tools.qdrant.query", return_value=mock_results) as mock_qdrant,
-        patch("..tools.neo4j_driver.session", new_callable=AsyncMock) as mock_session,
-        patch.object(settings, "use_sparse", True),
-        patch.object(settings, "use_async", False),
-    ):
-        mock_session.return_value.run = AsyncMock(
-            return_value=[{"n": {"content": "graph add"}}]
-        )
-        results: list[dict[str, Any]] = await graphrag_plus("add function", "code")
-        assert results[0].get("sparse_score") == 0.9, (
-            "Expected sorted by sparse score descending"
-        )  # Insight: Lexical boost for code
-        assert len(results) <= 10, "Expected capped results"
-        mock_qdrant.assert_called_once()  # Coverage: Non-async path
-
-
-@pytest.mark.asyncio
-async def test_graphrag_plus_no_web() -> None:
-    """Test without web trigger (non-empty vectors); real-world: existing
-    'machine learning basics' query."""
-    mock_vectors = [{"content": "ML basics: supervised vs unsupervised."}]
-    with (
+        patch("self_ai.tools._encode_text", return_value=[0.1, 0.2]),
+        patch.object(tools.query_planner, "build", return_value=plan),
+        patch.object(tools.settings, "disable_legacy_retrieval", False),
         patch(
-            "..tools.qdrant.aquery", new_callable=AsyncMock, return_value=mock_vectors
-        ) as mock_qdrant,
-        patch("..tools.tavily.search") as mock_tavily,
-        patch("..tools.neo4j_driver.session", new_callable=AsyncMock) as mock_session,
-        patch.object(settings, "use_async", True),
+            "self_ai.tools._search_plan_collections",
+            new=AsyncMock(side_effect=[[], [{"content": "from web", "source_type": "web", "score": 0.5}]]),
+        ),
+        patch("self_ai.tools._index_web_result", new=AsyncMock()),
+        patch(
+            "self_ai.tools.tavily.search",
+            return_value={"results": [{"content": "web content"}]},
+        ) as mocked_web,
     ):
-        mock_session.return_value.run = AsyncMock(
-            return_value=[{"n": {"content": "Graph ML node."}}]
-        )
-        results: list[dict[str, Any]] = await graphrag_plus("machine learning basics")
-        assert len(results) == 2, "Expected vector + graph fuse without web"
-        assert "supervised" in str(results[0]), "Expected real-world ML insight"
-        mock_tavily.assert_not_called()  # Coverage: No trigger
+        result = await tools.graphrag_plus("latest policy news", content_type="general")
+    assert result
+    mocked_web.assert_called_once()

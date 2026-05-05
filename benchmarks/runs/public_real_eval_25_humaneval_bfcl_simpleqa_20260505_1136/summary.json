@@ -1,0 +1,170 @@
+{
+  "schema_version": "self_ai_public_real_eval_25.v1",
+  "generated_at": "2026-05-05T03:35:30+00:00",
+  "scope": "Real public dataset micro-evaluation requested by user: HumanEval+/5-9, BFCL 10, SimpleQA 10.",
+  "note": "Lightweight fixed-subset results; not official leaderboard submissions.",
+  "runs": [
+    {
+      "name": "HumanEval+ batch02 HumanEval/5-HumanEval/9",
+      "run": "benchmarks/runs/humaneval_plus_real_batch02_offset5_size5_20260505_1125",
+      "cases": "benchmarks/public_subsets/humaneval_plus_mini10_20260505/humaneval_plus_cases.jsonl",
+      "predictions": "benchmarks/predictions/humaneval_plus_mini10_20260505_batch02_predictions.jsonl",
+      "metrics": {
+        "schema_version": "public_dataset_eval.v1",
+        "stage": "humaneval_plus",
+        "generated_at": "2026-05-05T03:24:42+00:00",
+        "total_cases": 5,
+        "ok_cases": 5,
+        "failed_cases": 0,
+        "ok_rate": 1.0,
+        "selected_case_count": 5,
+        "executed_case_count": 5,
+        "offset": 5,
+        "batch_size": 5,
+        "stopped_early": false,
+        "failure_reasons": {},
+        "latency_avg_s": 0.231,
+        "latency_p50_s": 0.225,
+        "latency_p95_s": 0.252,
+        "pass_at_1": 1.0,
+        "syntax_pass_rate": 1.0,
+        "timeout_rate": 0.0
+      },
+      "failure_count": 0,
+      "failures_path": "benchmarks\\runs\\humaneval_plus_real_batch02_offset5_size5_20260505_1125\\failures.json",
+      "report_path": "benchmarks\\runs\\humaneval_plus_real_batch02_offset5_size5_20260505_1125\\report.md"
+    },
+    {
+      "name": "BFCL batch01 simple_0-simple_4",
+      "run": "benchmarks/runs/bfcl_real_batch01_offset0_size5_20260505_1132",
+      "cases": "benchmarks/public_subsets/bfcl_real_mini10_20260505/bfcl_cases.jsonl",
+      "predictions": "benchmarks/predictions/bfcl_real_mini10_20260505_direct_predictions.jsonl",
+      "metrics": {
+        "schema_version": "public_dataset_eval.v1",
+        "stage": "bfcl",
+        "generated_at": "2026-05-05T03:32:13+00:00",
+        "total_cases": 5,
+        "ok_cases": 5,
+        "failed_cases": 0,
+        "ok_rate": 1.0,
+        "selected_case_count": 5,
+        "executed_case_count": 5,
+        "offset": 0,
+        "batch_size": 5,
+        "stopped_early": false,
+        "failure_reasons": {},
+        "latency_avg_s": 0.0,
+        "latency_p50_s": 0.0,
+        "latency_p95_s": 0.0,
+        "schema_valid_rate": 1.0,
+        "function_name_accuracy": 1.0,
+        "argument_exact_match": 1.0
+      },
+      "failure_count": 0,
+      "failures_path": "benchmarks\\runs\\bfcl_real_batch01_offset0_size5_20260505_1132\\failures.json",
+      "report_path": "benchmarks\\runs\\bfcl_real_batch01_offset0_size5_20260505_1132\\report.md"
+    },
+    {
+      "name": "BFCL batch02 simple_5-simple_9",
+      "run": "benchmarks/runs/bfcl_real_batch02_offset5_size5_20260505_1133",
+      "cases": "benchmarks/public_subsets/bfcl_real_mini10_20260505/bfcl_cases.jsonl",
+      "predictions": "benchmarks/predictions/bfcl_real_mini10_20260505_direct_predictions.jsonl",
+      "metrics": {
+        "schema_version": "public_dataset_eval.v1",
+        "stage": "bfcl",
+        "generated_at": "2026-05-05T03:33:11+00:00",
+        "total_cases": 5,
+        "ok_cases": 4,
+        "failed_cases": 1,
+        "ok_rate": 0.8,
+        "selected_case_count": 5,
+        "executed_case_count": 5,
+        "offset": 5,
+        "batch_size": 5,
+        "stopped_early": false,
+        "failure_reasons": {
+          "tool_call_mismatch": 1
+        },
+        "latency_avg_s": 0.0,
+        "latency_p50_s": 0.0,
+        "latency_p95_s": 0.0,
+        "schema_valid_rate": 1.0,
+        "function_name_accuracy": 1.0,
+        "argument_exact_match": 0.8
+      },
+      "failure_count": 1,
+      "failures_path": "benchmarks\\runs\\bfcl_real_batch02_offset5_size5_20260505_1133\\failures.json",
+      "report_path": "benchmarks\\runs\\bfcl_real_batch02_offset5_size5_20260505_1133\\report.md"
+    },
+    {
+      "name": "SimpleQA batch01 simpleqa_0-simpleqa_4",
+      "run": "benchmarks/runs/simpleqa_real_batch01_offset0_size5_20260505_1134",
+      "cases": "benchmarks/public_subsets/simpleqa_real_mini10_20260505/simpleqa_cases.jsonl",
+      "predictions": "benchmarks/predictions/simpleqa_real_mini10_20260505_predictions.jsonl",
+      "metrics": {
+        "schema_version": "public_dataset_eval.v1",
+        "stage": "simpleqa",
+        "generated_at": "2026-05-05T03:34:14+00:00",
+        "total_cases": 5,
+        "ok_cases": 3,
+        "failed_cases": 2,
+        "ok_rate": 0.6,
+        "selected_case_count": 5,
+        "executed_case_count": 5,
+        "offset": 0,
+        "batch_size": 5,
+        "stopped_early": false,
+        "failure_reasons": {
+          "incorrect": 2
+        },
+        "latency_avg_s": 0.0,
+        "latency_p50_s": 0.0,
+        "latency_p95_s": 0.0,
+        "correct_rate": 0.6,
+        "not_attempted_rate": 0.0,
+        "incorrect_rate": 0.4
+      },
+      "failure_count": 2,
+      "failures_path": "benchmarks\\runs\\simpleqa_real_batch01_offset0_size5_20260505_1134\\failures.json",
+      "report_path": "benchmarks\\runs\\simpleqa_real_batch01_offset0_size5_20260505_1134\\report.md"
+    },
+    {
+      "name": "SimpleQA batch02 simpleqa_5-simpleqa_9",
+      "run": "benchmarks/runs/simpleqa_real_batch02_offset5_size5_20260505_1135",
+      "cases": "benchmarks/public_subsets/simpleqa_real_mini10_20260505/simpleqa_cases.jsonl",
+      "predictions": "benchmarks/predictions/simpleqa_real_mini10_20260505_predictions.jsonl",
+      "metrics": {
+        "schema_version": "public_dataset_eval.v1",
+        "stage": "simpleqa",
+        "generated_at": "2026-05-05T03:34:55+00:00",
+        "total_cases": 5,
+        "ok_cases": 1,
+        "failed_cases": 4,
+        "ok_rate": 0.2,
+        "selected_case_count": 5,
+        "executed_case_count": 5,
+        "offset": 5,
+        "batch_size": 5,
+        "stopped_early": false,
+        "failure_reasons": {
+          "incorrect": 4
+        },
+        "latency_avg_s": 0.0,
+        "latency_p50_s": 0.0,
+        "latency_p95_s": 0.0,
+        "correct_rate": 0.2,
+        "not_attempted_rate": 0.0,
+        "incorrect_rate": 0.8
+      },
+      "failure_count": 4,
+      "failures_path": "benchmarks\\runs\\simpleqa_real_batch02_offset5_size5_20260505_1135\\failures.json",
+      "report_path": "benchmarks\\runs\\simpleqa_real_batch02_offset5_size5_20260505_1135\\report.md"
+    }
+  ],
+  "totals": {
+    "cases": 25,
+    "ok_cases": 18,
+    "failed_cases": 7,
+    "ok_rate": 0.72
+  }
+}

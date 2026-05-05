@@ -1,0 +1,15 @@
+{"case_id": "08f4fc43", "type": "ingest", "turn_index": 1, "elapsed_s": 115.93}
+{"case_id": "08f4fc43", "type": "ingest", "turn_index": 2, "elapsed_s": 30.636}
+{"case_id": "08f4fc43", "type": "query", "turn_index": 1, "elapsed_s": 22.158}
+{"case_id": "2c63a862", "type": "ingest", "turn_index": 1, "elapsed_s": 101.097}
+{"case_id": "2c63a862", "type": "ingest", "turn_index": 2, "elapsed_s": 79.065}
+{"case_id": "2c63a862", "type": "query", "turn_index": 1, "elapsed_s": 21.716}
+{"case_id": "gpt4_385a5000", "type": "ingest", "turn_index": 1, "elapsed_s": 30.804}
+{"case_id": "gpt4_385a5000", "type": "ingest", "turn_index": 2, "elapsed_s": 29.468}
+{"case_id": "gpt4_385a5000", "type": "query", "turn_index": 1, "elapsed_s": 21.873}
+{"case_id": "2a1811e2", "type": "ingest", "turn_index": 1, "elapsed_s": 52.196}
+{"case_id": "2a1811e2", "type": "ingest", "turn_index": 2, "elapsed_s": 62.208}
+{"case_id": "2a1811e2", "type": "query", "turn_index": 1, "elapsed_s": 32.099}
+{"case_id": "bbf86515", "type": "ingest", "turn_index": 1, "elapsed_s": 78.562}
+{"case_id": "bbf86515", "type": "ingest", "turn_index": 2, "elapsed_s": 30.506}
+{"case_id": "bbf86515", "type": "query", "turn_index": 1, "elapsed_s": 23.125}

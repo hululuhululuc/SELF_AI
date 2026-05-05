@@ -1,0 +1,492 @@
+{
+  "type": "ingest",
+  "case_id": "gpt4_385a5000",
+  "chat_id": "longmemeval_s_batch02_default3_gpt4_385a5000",
+  "turn_index": 2,
+  "session_id": "answer_7a4a93f1_1",
+  "prompt": "Memory ingestion step.\nSession ID: answer_7a4a93f1_1\nSession Date: 2023/03/10 (Fri) 00:33\nRead and remember the transcript below for future cross-session QA in this same chat.\nReply with one short line: INGESTED <Session ID>.\n\n[user] I'm planning to plant out my seedlings soon and I'm wondering if you can tell me the average soil temperature for my area. By the way, I've been starting seeds indoors under grow lights in my basement since February 20th - tomatoes, peppers, and cucumbers are all doing well, about 2-3 inches tall now. [has_answer=true]\n[assistant] Congratulations on starting your seedlings indoors! It's exciting to see them grow.\n\nTo determine the average soil temperature for your area, I'll need to know your location or zip code. Soil temperature varies depending on factors like latitude, elevation, and climate. Once I have your location, I can provide you with the average soil temperature for your area.\n\nIn general, most vegetables and flowers prefer soil temperatures between 55°F (13°C) and 75°F (24°C) for optimal growth. Here are some general guidelines for the soil temperatures required for different plants:\n\n* Tomatoes: 55°F (13°C) to 65°F (18°C)\n* Peppers: 60°F (16°C) to 70°F (21°C)\n* Cucumbers: 60°F (16°C) to 70°F (21°C)\n\nKeep in mind that these are general guidelines, and the specific soil temperature requirements may vary depending on the specific variety of your plants.\n\nOnce you're ready to plant out your seedlings, make sure to harden them off first by gradually exposing them to outdoor conditions over the course of 7-10 days. This will help them adjust to the change in temperature, light, and humidity.\n\nPlease share your location or zip code, and I'll do my best to provide you with the average soil temperature for your area.\n[user] I'm in the 23456 zip code. Also, I've been fertilizing my seedlings with a balanced fertilizer and making sure the soil is moist but not soggy.\n[assistant] The 23456 zip code is located in Virginia Beach, Virginia.\n\nAccording to historical climate data, the average soil temperature in your area during late March to early April is around 48°F (9°C) to 52°F (11°C). However, this can vary from year to year, and it's not uncommon for soil temperatures to fluctuate by 2-3°F (1-2°C) from day to day.\n\nAs you're planning to plant out your seedlings soon, keep an eye on the weather forecast and wait for a spell of warm weather to increase the soil temperature. You can also take steps to warm up the soil, such as:\n\n1. Mulching: Apply a layer of organic mulch, like straw or grass clippings, to retain heat and moisture in the soil.\n2. Black plastic or row covers: Use black plastic or row covers to trap heat and warm up the soil. These can be removed once the seedlings are planted and the soil has warmed up.\n3. Cold frames or hoop houses: If you have a cold frame or hoop house, use it to extend the growing season and warm up the soil.\n\nIt's great to hear that you've been fertilizing your seedlings with a balanced fertilizer and maintaining the right soil moisture levels. This will help them develop strong roots and prepare them for outdoor conditions.\n\nBefore planting out, make sure to harden off your seedlings as I mentioned earlier. This will help them adjust to outdoor conditions and reduce the risk of shock.\n\nOnce you've planted out your seedlings, keep an eye on the weather and be prepared to provide support or protection if needed. Good luck, and happy gardening!\n[user] Now that I know the average soil temperature in my area, I'm wondering if it's too early to plant out my tomatoes, peppers, and cucumbers. Should I wait for the soil temperature to reach a certain threshold or are they okay to go out now?\n[user] I've been preparing the raised bed in my backyard by adding a 2-inch layer of compost and mixing it into the soil, so I'm hoping that will help warm up the soil a bit. Do you think the compost will make a significant difference in soil temperature?\n[assistant] Excellent preparation! Adding a 2-inch layer of compost to your raised bed is a great way to improve soil health, structure, and fertility. Compost can indeed help warm up the soil, but the extent of its impact on soil temperature depends on several factors.\n\nCompost can increase soil temperature through various mechanisms:\n\n1. **Insulation**: Compost acts as an insulator, reducing heat loss from the soil surface. This can help retain soil heat, especially during colder nights.\n2. **Microbial activity**: Compost is teeming with microorganisms, which break down organic matter and release heat as a byproduct. This microbial activity can contribute to a slight increase in soil temperature.\n3. **Soil structure**: Compost can improve soil structure, allowing it to retain more heat. Well-structured soil with good aeration and water-holding capacity can retain heat better than compacted or poorly draining soil.\n\nHowever, it's essential to note that the impact of compost on soil temperature is relatively small, especially in the short term. A 2-inch layer of compost might raise the soil temperature by 1-2°F (0.5-1°C) at most, depending on the initial soil temperature and other environmental factors.\n\nIn your case, since the average soil temperature in your area is around 48°F (9°C) to 52°F (11°C), the compost might help bring it up to around 50°F (10°C) to 54°F (12°C). While this is still below the optimal temperature for your warm-season crops, every little bit helps, and the compost will provide other benefits like improved soil fertility and structure.\n\nTo further enhance the warming effect, consider combining the compost with other techniques I mentioned earlier, such as mulching, using black plastic or row covers, or creating a cold frame or hoop house. These methods can help increase the soil temperature more significantly and create a more favorable environment for your seedlings.\n\nKeep in mind that the compost will continue to break down and release nutrients as the season progresses, which will benefit your plants in the long run. So, even if the temperature increase is modest, the compost will still have a positive impact on your soil and plants.\n[user] What's the best way to support the peas I've planted, as they're already sprouting? Should I add some kind of trellis or cage to help them grow upwards?\n[assistant] Congratulations on getting your peas off to a great start! Supporting peas is essential to help them grow upwards and produce a bountiful harvest. Here are some tips to help you provide the best support for your peas:\n\n1. **Trellis or Cages:** A trellis or cage is an excellent way to support peas. You can use a simple wooden or metal trellis, or even a tomato cage. Place the trellis or cage near the peas, making sure it's sturdy enough to hold the weight of the growing peas.\n2. **Pea Stakes:** If you don't have a trellis or cage, you can use pea stakes to provide individual support for each plant. Simply drive the stakes into the soil near the base of the pea plant, and gently tie the stem to the stake using twine or a soft material.\n3. **Netting or Chicken Wire:** Another option is to use netting or chicken wire to create a support system. Simply stretch the netting or chicken wire between two stakes, and the peas will climb up through the openings.\n4. **Tepee Support:** For a more rustic look, you can create a tepee support using bamboo stakes or wooden dowels. Simply place the stakes in a teepee shape around the peas, and tie the stems to the stakes as they grow.\n\nWhen to Add Support:\n\n* For bush peas, you can add support once they're about 6-8 inches (15-20 cm) tall.\n* For climbing peas, add support as soon as you see the first tendrils emerging, usually around 2-3 inches (5-7.5 cm) tall.\n\nTips for Supporting Peas:\n\n* Make sure the support is sturdy and won't topple over in the wind.\n* Provide enough space between the support and the peas for air circulation and sunlight to reach the leaves.\n* Gently tie the stems to the support using twine or a soft material to avoid damaging the plant.\n* Keep the support clean and free of debris to prevent disease and pests.\n\nBy providing the right support, you'll be encouraging your peas to grow upwards, producing a healthier and more productive crop. Happy growing!",
+  "response": "Execution not completed with verifiable evidence. Missing: need_successful_tool_execution. Reason: execution_evidence_missing. Please continue with required tool actions and evidence refs.",
+  "elapsed_s": 29.468,
+  "errors": [
+    {
+      "type": "CompletionNotVerifiedTerminal",
+      "message": "completion gate terminal block: execution_evidence_missing",
+      "stage": "mainloop",
+      "metadata": {
+        "reason": "execution_evidence_missing",
+        "blocked_count": 3
+      }
+    }
+  ],
+  "run_id": "c1ec4834-00fa-49dc-8e4c-f8c2f5508c44",
+  "metadata": {
+    "input_garbled_warning": false,
+    "chat_id": "longmemeval_s_batch02_default3_gpt4_385a5000",
+    "user_id": "longmemeval-eval",
+    "chat_recent_turns": [
+      {
+        "memory_id": "turn:1",
+        "turn_id": 1,
+        "run_id": "3ff15123-3c04-4f8f-953f-12b0316726e8",
+        "timestamp": "2026-05-05T17:29:29.442745+00:00",
+        "memory_type": "fact",
+        "memory_class": "fact",
+        "source_layer": "L1",
+        "source_type": "turn_log",
+        "preview": "Memory ingestion step. Session ID: answer_7a4a93f1_2 Session Date: 2023/03/10 (Fri) 08:29 Read and remember the transcript below for future cross-session QA in this same chat. Reply with one short line: INGESTED <Sess...\nINGESTED answer_7a4a93f1_2\nTask: Memory ingestion step. Session ID: answer_7a4a93f1_2 Session Date: 2023/03/10 (Fri) 08:29 Read and remember the transcript below for future cross-session QA in this same chat. Reply with one short line: INGESTED <Session ID>. [user] I'm planning to plant some seedlings in my backyard soon. Can you tell me what...",
+        "score": {
+          "age_hours": 0.0,
+          "decay": 1.0,
+          "importance": 0.5,
+          "confidence": 0.9,
+          "importance_boost": 1.0,
+          "confidence_boost": 1.2,
+          "reliability_boost": 1.1,
+          "decay_mode": "fast",
+          "pinned": false,
+          "final_score": 1.319994
+        },
+        "refs": {
+          "turn_id": 1,
+          "run_id": "3ff15123-3c04-4f8f-953f-12b0316726e8"
+        }
+      },
+      {
+        "memory_id": "longmemeval_s_batch02_default3_gpt4_385a5000-turn-1-summary",
+        "turn_id": 1,
+        "run_id": "3ff15123-3c04-4f8f-953f-12b0316726e8",
+        "timestamp": "2026-05-05T17:29:29.442745+00:00",
+        "memory_type": "turn_summary",
+        "memory_class": "fact",
+        "source_layer": "L2",
+        "source_type": "chat_memory:turn_summary",
+        "preview": "[fact/turn_summary] | Task: Memory ingestion step. Session ID: answer_7a4a93f1_2 Session Date: 2023/03/10 (Fri) 08:29 Read and remember the transcript below for future cross-session QA in this same chat. Reply with one short line: INGESTED <Session ID>. [user] I'm planning to plant some seedlings in my backyard soon. Can you tell me what...",
+        "score": {
+          "semantic_score": 0.687068,
+          "final_score": 0.82446,
+          "decay_mode": "fast",
+          "pinned": false,
+          "importance": 0.5,
+          "confidence": 0.9
+        },
+        "refs": {
+          "chunk_id": "longmemeval_s_batch02_default3_gpt4_385a5000-turn-1-summary",
+          "source": "chat:longmemeval_s_batch02_default3_gpt4_385a5000",
+          "path": "",
+          "symbol": "",
+          "collection": "cf_chat_memory",
+          "query_variant": 1
+        }
+      },
+      {
+        "memory_id": "longmemeval_s_batch02_default3_gpt4_385a5000-turn-1-response",
+        "turn_id": 1,
+        "run_id": "3ff15123-3c04-4f8f-953f-12b0316726e8",
+        "timestamp": "2026-05-05T17:29:29.442745+00:00",
+        "memory_type": "response_summary",
+        "memory_class": "ephemeral",
+        "source_layer": "L2",
+        "source_type": "chat_memory:response_summary",
+        "preview": "[ephemeral/response_summary] | INGESTED answer_7a4a93f1_2",
+        "score": {
+          "semantic_score": 0.404853,
+          "final_score": 0.427513,
+          "decay_mode": "fast",
+          "pinned": false,
+          "importance": 0.3,
+          "confidence": 0.9
+        },
+        "refs": {
+          "chunk_id": "longmemeval_s_batch02_default3_gpt4_385a5000-turn-1-response",
+          "source": "chat:longmemeval_s_batch02_default3_gpt4_385a5000",
+          "path": "",
+          "symbol": "",
+          "collection": "cf_chat_memory",
+          "query_variant": 1
+        }
+      },
+      {
+        "memory_id": "3ff15123-3c04-4f8f-953f-12b0316726e8",
+        "turn_id": 0,
+        "run_id": "3ff15123-3c04-4f8f-953f-12b0316726e8",
+        "timestamp": "",
+        "memory_type": "graph_lineage",
+        "memory_class": "decision",
+        "source_layer": "L3",
+        "source_type": "neo4j",
+        "preview": "nodes=0, edges=0, run_id=3ff15123-3c04-4f8f-953f-12b0316726e8",
+        "score": {
+          "semantic_score": 0.0,
+          "final_score": 0.0,
+          "decay_mode": "none",
+          "pinned": false,
+          "importance": 0.5,
+          "confidence": 0.8
+        },
+        "refs": {
+          "run_id": "3ff15123-3c04-4f8f-953f-12b0316726e8",
+          "node_count": 0,
+          "edge_count": 0
+        }
+      }
+    ],
+    "chat_recent_turns_budget": {
+      "max_chars_total": 96000,
+      "max_item_chars": 6000,
+      "used_chars": 3448
+    },
+    "chat_recent_turns_stats": {
+      "chat_id": "longmemeval_s_batch02_default3_gpt4_385a5000",
+      "l1_used": 1,
+      "l2_used": 2,
+      "l3_used": 1,
+      "layer_health": {
+        "l1_ok": true,
+        "l2_ok": true,
+        "l3_ok": true,
+        "l1_degraded": false,
+        "l2_degraded": false,
+        "l3_degraded": false,
+        "l2_error_type": "",
+        "l3_error_type": ""
+      },
+      "degraded": false,
+      "degraded_reasons": [],
+      "l2_error": null,
+      "l3_error": null,
+      "fusion_failed": false,
+      "l2_query_variants": 3,
+      "l2_expand_error": null,
+      "global_constraints_used": 0,
+      "l2_attempted": true,
+      "l3_attempted": true,
+      "requested_turns": 1,
+      "kept_turns": 4,
+      "dropped_turns": 0,
+      "source_type_groups": {
+        "L1": 1,
+        "L2": 2,
+        "L3": 1
+      }
+    },
+    "chat_global_constraints": [],
+    "chat_global_constraints_source": "l1_session_list",
+    "chat_global_constraints_status": {
+      "attempted": true,
+      "succeeded": true,
+      "source": "service",
+      "count": 0,
+      "error_type": "",
+      "error_message": ""
+    },
+    "engine_mode": "mainloop_v1",
+    "agent_runtime_used": false,
+    "revision_count": 0,
+    "max_revision_iterations": 1,
+    "revision_performed": false,
+    "revision_target_agent": null,
+    "pipeline": [
+      "mainloop"
+    ],
+    "pipeline_source": "mainloop",
+    "recent_tool_results": [],
+    "last_parse_error": "",
+    "execution_state": {
+      "progress": "blocked",
+      "goal_progress": "none",
+      "successful_calls": 0,
+      "failed_calls": 0,
+      "side_effect_successful_calls": 0,
+      "verified_read_calls": 0,
+      "last_success_tool": "",
+      "last_failed_tool": "",
+      "completion_gate_blocked_count": 3,
+      "control_event_count": 3,
+      "terminal_error_count": 1,
+      "blockers": [],
+      "goal_requires_side_effect": false,
+      "goal_target_path_count": 2,
+      "goal_verified_path_count": 0,
+      "workspace_snapshot_version": 0
+    },
+    "last_model_plan": {
+      "turn": 3,
+      "type": "final_answer",
+      "goal": "Acknowledge memory ingestion as requested by user instruction.",
+      "success_criteria": "Response contains exact string 'INGESTED <Session ID>'.",
+      "next_step": "Return final answer.",
+      "call_count": 0
+    },
+    "goal_contract": {
+      "requires_side_effect": false,
+      "requires_read_proof": false,
+      "target_paths": [
+        "(0.5",
+        "(5-7.5"
+      ],
+      "has_explicit_target_path": true,
+      "intent_kind": "read_only",
+      "source": "model_intent_kind"
+    },
+    "goal_verified_paths": [],
+    "no_progress_repeat_count": 0,
+    "workspace_snapshot_version": 0,
+    "workspace_snapshot": {
+      "reads": {},
+      "lists": {},
+      "workspace_version": 0
+    },
+    "prompt_stats": {
+      "stage": "mainloop_decide",
+      "prompt_version": "v2-layered",
+      "static_cache_hit": true,
+      "chars_total": 21515,
+      "chars_static": 9282,
+      "chars_dynamic": 12231,
+      "dynamic_ratio": 0.5685,
+      "recent_errors_used": 12,
+      "recent_tool_results_used": 24,
+      "tool_catalog_used": 17,
+      "tool_catalog_fingerprint": "3120f4c9e313"
+    },
+    "model_outputs": {
+      "mainloop_turn_1": {
+        "model": "qwen3.6-plus",
+        "response_preview": "{\n  \"type\": \"final_answer\",\n  \"response\": \"INGESTED answer_7a4a93f1_1\",\n  \"calls\": [],\n  \"execution_mode\": \"memory_ingestion_ack\",\n  \"workflow_decision\": {\n    \"use_quick_answer\": true,\n    \"requires_context\": false,\n    \"selected_agents\": []\n  },\n  \"plan\": {\n    \"goal\": \"Acknowledge memory inges..."
+      },
+      "mainloop_turn_2": {
+        "model": "qwen3.6-plus",
+        "response_preview": "{\n  \"type\": \"final_answer\",\n  \"response\": \"INGESTED answer_7a4a93f1_1\",\n  \"calls\": [],\n  \"execution_mode\": \"direct_response\",\n  \"workflow_decision\": {\n    \"use_quick_answer\": true,\n    \"requires_context\": false,\n    \"selected_agents\": []\n  },\n  \"plan\": {\n    \"goal\": \"Acknowledge memory ingestion ..."
+      },
+      "mainloop_turn_3": {
+        "model": "qwen3.6-plus",
+        "response_preview": "{\n  \"type\": \"final_answer\",\n  \"response\": \"INGESTED answer_7a4a93f1_1\",\n  \"calls\": [],\n  \"execution_mode\": \"memory_ingestion_ack\",\n  \"workflow_decision\": {\n    \"use_quick_answer\": true,\n    \"requires_context\": false,\n    \"selected_agents\": []\n  },\n  \"plan\": {\n    \"goal\": \"Acknowledge memory inges..."
+      }
+    },
+    "last_model_payload": {
+      "type": "final_answer",
+      "response": "INGESTED answer_7a4a93f1_1",
+      "calls": [],
+      "execution_mode": "memory_ingestion_ack",
+      "workflow_decision": {
+        "use_quick_answer": true,
+        "requires_context": false,
+        "selected_agents": []
+      },
+      "plan": {
+        "goal": "Acknowledge memory ingestion as requested by user instruction.",
+        "success_criteria": "Response contains exact string 'INGESTED <Session ID>'.",
+        "next_step": "Return final answer."
+      },
+      "goal_contract": {
+        "intent_kind": "read_only",
+        "target_paths": []
+      },
+      "completion": {
+        "outcome": "completed",
+        "needs_side_effect_proof": false,
+        "needs_read_proof": false,
+        "is_complete": true,
+        "evidence_note": "Task is a conversational acknowledgment of memory ingestion; no external tool execution required to satisfy the specific output format request.",
+        "evidence_refs": [],
+        "remaining_blockers": []
+      },
+      "constraint_maintenance": {
+        "enabled": false,
+        "reason": "No durable session constraints added or modified."
+      }
+    },
+    "completion_gate_blocked_count": 3,
+    "completion_gate_feedback": {
+      "gate": "completion_gate",
+      "reason": "execution_evidence_missing",
+      "blocked_count": 3,
+      "missing": [
+        "need_successful_tool_execution"
+      ],
+      "target_paths": [
+        "(0.5",
+        "(5-7.5"
+      ],
+      "next_hint": "execute at least one relevant tool call before final answer"
+    },
+    "control_events": [
+      {
+        "type": "CompletionGateBlocked",
+        "stage": "mainloop",
+        "reason": "execution_evidence_missing",
+        "metadata": {
+          "turn": 1
+        },
+        "ts": "2026-05-05T17:29:39.734477+00:00"
+      },
+      {
+        "type": "CompletionGateBlocked",
+        "stage": "mainloop",
+        "reason": "execution_evidence_missing",
+        "metadata": {
+          "turn": 2
+        },
+        "ts": "2026-05-05T17:29:47.261760+00:00"
+      },
+      {
+        "type": "CompletionGateBlocked",
+        "stage": "mainloop",
+        "reason": "execution_evidence_missing",
+        "metadata": {
+          "turn": 3
+        },
+        "ts": "2026-05-05T17:29:54.006838+00:00"
+      }
+    ],
+    "completion_gate_terminal": true,
+    "global_constraint_maintenance": {
+      "requested": false,
+      "reason": "No durable session constraints added or modified.",
+      "attempted": false,
+      "changed": false,
+      "applied_ops": [],
+      "error": {}
+    },
+    "chat_memory": {
+      "chat_id": "longmemeval_s_batch02_default3_gpt4_385a5000",
+      "turn_id": 2,
+      "memory_id": "longmemeval_s_batch02_default3_gpt4_385a5000-turn-2",
+      "shard_file": "turns-20260505-01.ndjson",
+      "shard_size_bytes": 16903,
+      "retrieval_summary": "Task: Memory ingestion step. Session ID: answer_7a4a93f1_1 Session Date: 2023/03/10 (Fri) 00:33 Read and remember the transcript below for future cross-session QA in this same chat. Reply with one short line: INGESTED <Session ID>. [user] I'm planning to plant out my seedlings soon and I'm wondering if you can tell ...",
+      "committed_memory_count": 3,
+      "committed_memory_types": [
+        "turn_summary",
+        "response_summary",
+        "issue"
+      ],
+      "committed_memories": [
+        {
+          "chat_id": "longmemeval_s_batch02_default3_gpt4_385a5000",
+          "user_id": "longmemeval-eval",
+          "run_id": "c1ec4834-00fa-49dc-8e4c-f8c2f5508c44",
+          "turn_id": 2,
+          "timestamp": "2026-05-05T17:29:58.472685+00:00",
+          "confidence": 0.9,
+          "memory_type": "turn_summary",
+          "memory_class": "ephemeral",
+          "importance": 0.3,
+          "decay_mode": "fast",
+          "pinned": false,
+          "memory_id": "longmemeval_s_batch02_default3_gpt4_385a5000-turn-2-summary",
+          "content_preview": "Task: Memory ingestion step. Session ID: answer_7a4a93f1_1 Session Date: 2023/03/10 (Fri) 00:33 Read and remember the transcript below for future cross-session QA in this same chat. Reply with one short line: INGESTED <Session ID>. [user] I'm planning to plant out my seedlings soon and I'm wondering if you can tell ...",
+          "refs": {
+            "quality_gate_decision": "",
+            "error_count": 1,
+            "control_event_count": 3
+          },
+          "target_collection": "cf_chat_memory",
+          "decision_source": "model_sidecar_v1",
+          "rationale": "General conversation context with no persistent user preference or critical decision recorded."
+        },
+        {
+          "chat_id": "longmemeval_s_batch02_default3_gpt4_385a5000",
+          "user_id": "longmemeval-eval",
+          "run_id": "c1ec4834-00fa-49dc-8e4c-f8c2f5508c44",
+          "turn_id": 2,
+          "timestamp": "2026-05-05T17:29:58.472685+00:00",
+          "confidence": 0.8,
+          "memory_type": "response_summary",
+          "memory_class": "fact",
+          "importance": 0.5,
+          "decay_mode": "normal",
+          "pinned": false,
+          "memory_id": "longmemeval_s_batch02_default3_gpt4_385a5000-turn-2-response",
+          "content_preview": "Execution not completed with verifiable evidence. Missing: need_successful_tool_execution. Reason: execution_evidence_missing. Please continue with required tool actions and evidence refs.",
+          "refs": {
+            "goal_side_effect_done": false,
+            "goal_aligned_side_effect": false
+          },
+          "target_collection": "cf_task_memory",
+          "decision_source": "model_sidecar_v1",
+          "rationale": "Records specific gardening details (seed types, start date) which are transient task facts useful for immediate follow-up but not long-term constraints."
+        },
+        {
+          "chat_id": "longmemeval_s_batch02_default3_gpt4_385a5000",
+          "user_id": "longmemeval-eval",
+          "run_id": "c1ec4834-00fa-49dc-8e4c-f8c2f5508c44",
+          "turn_id": 2,
+          "timestamp": "2026-05-05T17:29:58.472685+00:00",
+          "confidence": 0.95,
+          "memory_type": "issue",
+          "memory_class": "issue",
+          "importance": 0.7,
+          "decay_mode": "slow",
+          "pinned": true,
+          "memory_id": "longmemeval_s_batch02_default3_gpt4_385a5000-turn-2-issue",
+          "content_preview": "Task: Memory ingestion step. Session ID: answer_7a4a93f1_1 Session Date: 2023/03/10 (Fri) 00:33 Read and remember the transcript below for future cross-session QA in this same chat. Reply with one short line: INGESTED...",
+          "refs": {
+            "error_type": "CompletionNotVerifiedTerminal",
+            "stage": "mainloop"
+          },
+          "target_collection": "cf_review_memory",
+          "decision_source": "model_sidecar_v1",
+          "rationale": "Execution failed due to missing tool evidence; requires review to ensure proper grounding in future similar queries about soil temperature."
+        }
+      ],
+      "write_policy": {
+        "requires_state_change": false,
+        "fact_write_allowed": true,
+        "issue_write_allowed": true,
+        "terminal_error_count": 1,
+        "control_event_count": 3,
+        "issue_suppressed_due_to_terminal_success": false,
+        "has_successful_execution": false,
+        "has_response_summary": true,
+        "has_state_change_committed": false,
+        "has_goal_aligned_state_change": false
+      },
+      "memory_contract_validation_errors": [],
+      "memory_decision_used": true,
+      "memory_decision_source": "model_sidecar_v1",
+      "global_constraints": [],
+      "global_constraints_count": 0
+    },
+    "chat_memory_sidecar": {
+      "attempted": true,
+      "enabled": true,
+      "succeeded": true,
+      "timeout": false,
+      "attempt_count": 1,
+      "fast_retry_used": false,
+      "fallback_used": false,
+      "error_type": "",
+      "error_message": "",
+      "decision_source": "model_sidecar_v1"
+    },
+    "chat_memory_compaction_scheduled": true,
+    "chat_memory_decision": {
+      "decision_source": "model_sidecar_v1",
+      "global_notes_preview": "User provided specific planting details (tomatoes, peppers, cucumbers started Feb 20). No external tool execution occurred, so factual verification is absent. Memory focuses on capturing the user's st...(truncated)",
+      "validation_error_count": 0
+    },
+    "chat_memory_l2l3_write": {
+      "enabled": true,
+      "strict_required": true,
+      "failed": false,
+      "write_qdrant": true,
+      "write_neo4j": true,
+      "qdrant_collection": "cf_review_memory",
+      "neo4j_label": "Issue",
+      "committed_count": 3,
+      "qdrant_attempted": 3,
+      "qdrant_ok": 3,
+      "qdrant_failed": 0,
+      "neo4j_attempted": 1,
+      "neo4j_ok": 1,
+      "neo4j_failed": 0,
+      "errors": [],
+      "qdrant_collection_counts": {
+        "cf_chat_memory": 1,
+        "cf_task_memory": 1,
+        "cf_review_memory": 1
+      }
+    }
+  }
+}

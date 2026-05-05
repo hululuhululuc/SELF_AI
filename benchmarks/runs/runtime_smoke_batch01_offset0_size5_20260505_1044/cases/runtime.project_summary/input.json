@@ -1,0 +1,8 @@
+{
+  "case_id": "runtime.project_summary",
+  "category": "runtime_smoke",
+  "prompt": "Write a short two-sentence project summary for Self AI.",
+  "expect_substrings": [
+    "self ai"
+  ]
+}

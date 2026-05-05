@@ -216,3 +216,31 @@ $RECYCLE.BIN/
 repomix-output.*
 current_codebase.xml
 prd_adrs.xml
+
+# Self AI local/runtime artifacts
+.env.local
+*.local.*
+.codeforge/
+.self_ai/
+.streamlit/*
+!.streamlit/config.toml
+artifacts/
+benchmarks/runs/*
+# Keep curated benchmark evidence used by README metrics.
+!benchmarks/runs/public_real_eval_25_humaneval_bfcl_simpleqa_20260505_1136/
+!benchmarks/runs/public_real_eval_25_humaneval_bfcl_simpleqa_20260505_1136/**
+!benchmarks/runs/runtime_smoke_batch01_offset0_size5_20260505_1044/
+!benchmarks/runs/runtime_smoke_batch01_offset0_size5_20260505_1044/**
+!benchmarks/runs/swebench_lite_l1_replace_mini10_summary_20260505_1538/
+!benchmarks/runs/swebench_lite_l1_replace_mini10_summary_20260505_1538/**
+!benchmarks/runs/longmemeval_s_mini10_summary_20260505_1644/
+!benchmarks/runs/longmemeval_s_mini10_summary_20260505_1644/**
+!benchmarks/runs/longmemeval_s_batch01_offset0_size5_20260506_default3/
+!benchmarks/runs/longmemeval_s_batch01_offset0_size5_20260506_default3/**
+!benchmarks/runs/longmemeval_s_batch02_offset5_size5_20260506_default3/
+!benchmarks/runs/longmemeval_s_batch02_offset5_size5_20260506_default3/**
+memory/chats/
+model/
+self_ai/model/
+tmp_dbg/
+tmp_real_samples/

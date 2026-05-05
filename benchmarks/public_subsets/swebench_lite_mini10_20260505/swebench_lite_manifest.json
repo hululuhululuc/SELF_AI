@@ -1,0 +1,20 @@
+{
+  "dataset": "SWE-bench Lite",
+  "source": "princeton-nlp/SWE-bench_Lite",
+  "case_count": 10,
+  "cases_path": "D:\\codex_ws\\codingagent\\codeforge\\benchmarks\\public_subsets\\swebench_lite_mini10_20260505\\swebench_lite_cases.jsonl",
+  "raw_path": "D:\\codex_ws\\codingagent\\codeforge\\benchmarks\\public_subsets\\swebench_lite_mini10_20260505\\raw\\swebench_lite_raw.jsonl",
+  "case_ids": [
+    "astropy__astropy-12907",
+    "astropy__astropy-14182",
+    "astropy__astropy-14365",
+    "astropy__astropy-14995",
+    "astropy__astropy-6938",
+    "astropy__astropy-7746",
+    "django__django-10914",
+    "django__django-10924",
+    "django__django-11001",
+    "django__django-11019"
+  ],
+  "note": "reference_patch/test_patch are saved for validation and analysis; agent prompts must not include reference_patch."
+}

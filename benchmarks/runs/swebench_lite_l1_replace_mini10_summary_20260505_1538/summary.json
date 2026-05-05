@@ -1,0 +1,71 @@
+{
+  "schema_version": "swebench_lite_l1_replace_mini10.v1",
+  "generated_at": "2026-05-05T07:50:39+00:00",
+  "dataset": "princeton-nlp/SWE-bench_Lite",
+  "scope": "First 10 SWE-bench Lite test cases, evaluated only for L1 patch applicability with replace_edit mode. Not official SWE-bench resolved results.",
+  "cases_path": "benchmarks/public_subsets/swebench_lite_mini10_20260505/swebench_lite_cases.jsonl",
+  "runs": [
+    {
+      "name": "SWE-bench Lite L1 replace_edit batch01 offset0 size5",
+      "run": "benchmarks/runs/swebench_lite_l1_replace_batch01_offset0_size5_20260505_1515",
+      "metrics": {
+        "schema_version": "swebench_lite_agent_eval.v1",
+        "stage": "swebench_lite",
+        "generated_at": "2026-05-05T07:32:07+00:00",
+        "total_cases": 5,
+        "ok_cases": 0,
+        "failed_cases": 5,
+        "ok_rate": 0.0,
+        "patch_apply_rate": 0.8,
+        "validation_blocked_rate": 0.8,
+        "offset": 0,
+        "batch_size": 5,
+        "stopped_early": false,
+        "failure_reasons": {
+          "validation_blocked": 4,
+          "edit_find_not_unique": 1
+        },
+        "latency_avg_s": 20.15
+      },
+      "failure_count": 5,
+      "report_path": "benchmarks\\runs\\swebench_lite_l1_replace_batch01_offset0_size5_20260505_1515\\report.md",
+      "failures_path": "benchmarks\\runs\\swebench_lite_l1_replace_batch01_offset0_size5_20260505_1515\\failures.json"
+    },
+    {
+      "name": "SWE-bench Lite L1 replace_edit batch02 offset5 size5",
+      "run": "benchmarks/runs/swebench_lite_l1_replace_batch02_offset5_size5_20260505_1518",
+      "metrics": {
+        "schema_version": "swebench_lite_agent_eval.v1",
+        "stage": "swebench_lite",
+        "generated_at": "2026-05-05T07:36:14+00:00",
+        "total_cases": 5,
+        "ok_cases": 0,
+        "failed_cases": 5,
+        "ok_rate": 0.0,
+        "patch_apply_rate": 0.6,
+        "validation_blocked_rate": 0.6,
+        "offset": 5,
+        "batch_size": 5,
+        "stopped_early": false,
+        "failure_reasons": {
+          "edit_find_not_unique": 2,
+          "validation_blocked": 3
+        },
+        "latency_avg_s": 20.668
+      },
+      "failure_count": 5,
+      "report_path": "benchmarks\\runs\\swebench_lite_l1_replace_batch02_offset5_size5_20260505_1518\\report.md",
+      "failures_path": "benchmarks\\runs\\swebench_lite_l1_replace_batch02_offset5_size5_20260505_1518\\failures.json"
+    }
+  ],
+  "totals": {
+    "cases": 10,
+    "ok_cases": 0,
+    "failed_cases": 10,
+    "patch_applied_cases": 7,
+    "validation_blocked_cases": 7,
+    "ok_rate": 0.0,
+    "patch_apply_rate": 0.7,
+    "validation_blocked_rate": 0.7
+  }
+}

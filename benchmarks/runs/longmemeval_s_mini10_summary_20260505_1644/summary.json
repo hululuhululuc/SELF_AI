@@ -1,0 +1,76 @@
+{
+  "schema_version": "longmemeval_s_mini10_summary.v1",
+  "generated_at": "2026-05-05T08:44:15+00:00",
+  "dataset": "LIXINYI33/longmemeval-s",
+  "scope": "First 10 LongMemEval-S cases, evaluated in two batches of 5 via Self AI multi-session memory workflow.",
+  "cases_path": "benchmarks/public_subsets/longmemeval_s_mini10_20260505/longmemeval_s_cases.jsonl",
+  "runs": [
+    {
+      "name": "batch01 offset0 size5",
+      "run": "benchmarks/runs/longmemeval_s_batch01_offset0_size5_20260505_1610",
+      "metrics": {
+        "schema_version": "longmemeval_s_memory_agent_eval.v1",
+        "generated_at": "2026-05-05T08:33:13+00:00",
+        "dataset": "LIXINYI33/longmemeval-s",
+        "stage": "longmemeval_s",
+        "total_cases": 5,
+        "ok_cases": 1,
+        "failed_cases": 4,
+        "ok_rate": 0.2,
+        "answer_accuracy": 0.2,
+        "evidence_hit_rate": 0.4,
+        "memory_recall_rate": 0.2,
+        "false_memory_rate": 0.2,
+        "quota_exhausted_cases": 0,
+        "l1_hits_total": 11,
+        "l2_hits_total": 21,
+        "l3_hits_total": 10,
+        "latency_avg_s": 31.125,
+        "offset": 0,
+        "batch_size": 5,
+        "stopped_early": false,
+        "stop_reason": "completed",
+        "completed_rows_hint": 1
+      }
+    },
+    {
+      "name": "batch02 offset5 size5",
+      "run": "benchmarks/runs/longmemeval_s_batch02_offset5_size5_20260505_1634",
+      "metrics": {
+        "schema_version": "longmemeval_s_memory_agent_eval.v1",
+        "generated_at": "2026-05-05T08:43:42+00:00",
+        "dataset": "LIXINYI33/longmemeval-s",
+        "stage": "longmemeval_s",
+        "total_cases": 5,
+        "ok_cases": 1,
+        "failed_cases": 4,
+        "ok_rate": 0.2,
+        "answer_accuracy": 0.2,
+        "evidence_hit_rate": 0.2,
+        "memory_recall_rate": 0.2,
+        "false_memory_rate": 0.6,
+        "quota_exhausted_cases": 0,
+        "l1_hits_total": 10,
+        "l2_hits_total": 18,
+        "l3_hits_total": 10,
+        "latency_avg_s": 39.357,
+        "offset": 5,
+        "batch_size": 5,
+        "stopped_early": false,
+        "stop_reason": "completed",
+        "completed_rows_hint": 1
+      }
+    }
+  ],
+  "totals": {
+    "cases": 10,
+    "ok_cases": 2,
+    "failed_cases": 8,
+    "ok_rate": 0.2,
+    "answer_accuracy": 0.2,
+    "evidence_hit_rate": 0.3,
+    "memory_recall_rate": 0.2,
+    "false_memory_rate": 0.4,
+    "not_attempted_rate": 0.4
+  }
+}

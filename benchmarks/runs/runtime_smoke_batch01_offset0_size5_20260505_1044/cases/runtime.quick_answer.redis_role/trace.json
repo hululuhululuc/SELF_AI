@@ -1,0 +1,153 @@
+[
+  {
+    "event": "runtime.encoding.health",
+    "ts": "2026-05-05T02:43:10.990Z",
+    "platform": "nt",
+    "codepage": 65001,
+    "pythonutf8": "1",
+    "pyioencoding": "utf-8",
+    "before": {
+      "stdout": "gbk",
+      "stderr": "gbk",
+      "preferred": "cp936"
+    },
+    "after": {
+      "stdout": "utf-8",
+      "stderr": "utf-8",
+      "preferred": "cp936"
+    }
+  },
+  {
+    "event": "embedder.warmup.start",
+    "ts": "2026-05-05T02:43:11.804Z",
+    "enabled": true,
+    "path": "./self_ai/model/bge-m3"
+  },
+  {
+    "event": "embedder.warmup.thread.started",
+    "ts": "2026-05-05T02:43:11.804Z",
+    "daemon": true
+  },
+  {
+    "event": "embedder.import.start",
+    "ts": "2026-05-05T02:43:11.804Z",
+    "module": "FlagEmbedding"
+  },
+  {
+    "event": "route_model.start",
+    "ts": "2026-05-05T02:43:12.459Z",
+    "stage_hint": "chat_memory_query_expand",
+    "task_preview": "Return JSON only with key `queries` as 2-3 concise search queries for session memory retrieval.\nKeep each query short an"
+  },
+  {
+    "event": "route_model.tier_forced",
+    "ts": "2026-05-05T02:43:12.459Z",
+    "stage_hint": "chat_memory_query_expand",
+    "from_tier": "balanced",
+    "to_tier": "fast"
+  },
+  {
+    "event": "route_model.end",
+    "ts": "2026-05-05T02:43:15.378Z",
+    "stage_hint": "chat_memory_query_expand",
+    "model": "qwen3.5-flash-2026-02-23",
+    "tier": "fast",
+    "attempt": 1,
+    "max_tokens": 512,
+    "timeout_s": 80,
+    "enable_thinking": false,
+    "finish_reason": "stop",
+    "elapsed_ms": 2918,
+    "response_preview": "{\n  \"queries\": [\n    \"Redis role in Self AI project\",\n    \"Self AI caching architecture Redis\",\n    \"High-performance caching Self AI\"\n  ]\n}"
+  },
+  {
+    "event": "embedder.import.start",
+    "ts": "2026-05-05T02:43:15.378Z",
+    "module": "FlagEmbedding"
+  },
+  {
+    "event": "embedder.import.end",
+    "ts": "2026-05-05T02:43:22.841Z",
+    "module": "FlagEmbedding"
+  },
+  {
+    "event": "embedder.import.end",
+    "ts": "2026-05-05T02:43:22.841Z",
+    "module": "FlagEmbedding"
+  },
+  {
+    "event": "embedder.load.start",
+    "ts": "2026-05-05T02:43:22.841Z",
+    "path": "D:\\codex_ws\\codingagent\\codeforge\\self_ai\\model\\bge-m3",
+    "fp16": false
+  },
+  {
+    "event": "embedder.load.start",
+    "ts": "2026-05-05T02:43:22.841Z",
+    "path": "D:\\codex_ws\\codingagent\\codeforge\\self_ai\\model\\bge-m3",
+    "fp16": false
+  },
+  {
+    "event": "embedder.load.end",
+    "ts": "2026-05-05T02:43:25.614Z",
+    "path": "D:\\codex_ws\\codingagent\\codeforge\\self_ai\\model\\bge-m3"
+  },
+  {
+    "event": "embedder.load.end",
+    "ts": "2026-05-05T02:43:25.702Z",
+    "path": "D:\\codex_ws\\codingagent\\codeforge\\self_ai\\model\\bge-m3"
+  },
+  {
+    "event": "embedder.warmup.end",
+    "ts": "2026-05-05T02:43:25.702Z",
+    "ok": true,
+    "path": "./self_ai/model/bge-m3"
+  },
+  {
+    "event": "route_model.start",
+    "ts": "2026-05-05T02:43:27.283Z",
+    "stage_hint": "mainloop_decide",
+    "task_preview": "# Role\nYou are the execution brain of Self AI.\n- Decide whether to return final_answer or tool_calls.\n\n# Output (JSON on"
+  },
+  {
+    "event": "route_model.end",
+    "ts": "2026-05-05T02:43:35.709Z",
+    "stage_hint": "mainloop_decide",
+    "model": "qwen3.6-plus-2026-04-02",
+    "tier": "balanced",
+    "attempt": 1,
+    "max_tokens": 32768,
+    "timeout_s": 80,
+    "enable_thinking": false,
+    "finish_reason": "stop",
+    "elapsed_ms": 8424,
+    "response_preview": "{\n  \"type\": \"final_answer\",\n  \"response\": \"Redis serves as the high-performance caching and session state store for Self AI, enabling fast retrieval of conversa"
+  },
+  {
+    "event": "route_model.start",
+    "ts": "2026-05-05T02:43:35.850Z",
+    "stage_hint": "memory_sidecar",
+    "task_preview": "You are a memory manager for an agentic coding system.\nReturn JSON only. No markdown.\nDecide memory profile per memory_t"
+  },
+  {
+    "event": "route_model.tier_forced",
+    "ts": "2026-05-05T02:43:35.850Z",
+    "stage_hint": "memory_sidecar",
+    "from_tier": "balanced",
+    "to_tier": "fast"
+  },
+  {
+    "event": "route_model.end",
+    "ts": "2026-05-05T02:43:40.155Z",
+    "stage_hint": "memory_sidecar",
+    "model": "qwen3.5-flash-2026-02-23",
+    "tier": "fast",
+    "attempt": 1,
+    "max_tokens": 2048,
+    "timeout_s": 80,
+    "enable_thinking": false,
+    "finish_reason": "stop",
+    "elapsed_ms": 4305,
+    "response_preview": "{\n  \"profiles\": {\n    \"turn_summary\": {\n      \"memory_type\": \"turn_summary\",\n      \"memory_class\": \"fact\",\n      \"target_collection\": \"cf_chat_memory\",\n      \"i"
+  }
+]

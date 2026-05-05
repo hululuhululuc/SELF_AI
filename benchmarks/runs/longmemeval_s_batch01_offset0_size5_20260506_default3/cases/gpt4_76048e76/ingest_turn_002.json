@@ -1,0 +1,572 @@
+{
+  "type": "ingest",
+  "case_id": "gpt4_76048e76",
+  "chat_id": "longmemeval_s_batch01_default3_gpt4_76048e76",
+  "turn_index": 2,
+  "session_id": "answer_b535969f_1",
+  "prompt": "Memory ingestion step.\nSession ID: answer_b535969f_1\nSession Date: 2023/03/10 (Fri) 08:11\nRead and remember the transcript below for future cross-session QA in this same chat.\nReply with one short line: INGESTED <Session ID>.\n\n[user] I'm thinking of getting a newer car and I'm researching the new hybrid model of my current Toyota Corolla. Do you have any info on its fuel efficiency and any promotions or discounts available? By the way, I just washed my current Corolla on Monday, February 27th, after not doing so for over a month - it was getting pretty dirty after that snowstorm we had a few weeks prior! [has_answer=true]\n[assistant] Exciting to hear that you're considering upgrading to a newer hybrid model of your trusty Toyota Corolla!\n\nAccording to the latest data, the 2022 Toyota Corolla Hybrid has an estimated EPA rating of up to 53 mpg in the city, 52 mpg on the highway, and 52 mpg combined. These numbers are quite impressive, especially considering the Corolla Hybrid's affordable price point.\n\nAs for promotions and discounts, Toyota often offers various incentives and deals on their hybrid models. Here are a few current offers you might want to explore:\n\n1. **Toyota's Hybrid Bonus Cash**: You can get up to $500 in bonus cash on select hybrid models, including the Corolla Hybrid.\n2. **Low APR Financing**: Toyota is currently offering 2.49% APR financing for 60 months on the 2022 Corolla Hybrid.\n3. **Lease Deals**: You can lease a 2022 Corolla Hybrid for around $229 per month for 36 months, with $2,999 due at signing.\n\nPlease note that these offers may vary depending on your location, and it's always best to check with your local Toyota dealership for the most up-to-date information.\n\nBy the way, kudos on washing your current Corolla! It's great that you're taking good care of your vehicle. I'm sure it felt refreshing to get rid of all the dirt and grime from that snowstorm.\n\nDo you have any specific questions about the Corolla Hybrid or would you like me to look into other models that might fit your needs?\n[user] I'd like to know more about the maintenance costs of the Corolla Hybrid. I've been doing some maintenance on my current car myself, like washing and vacuuming, but I had to take it to the dealership for a routine checkup this Friday because my friend said the \"check engine\" light came on when she borrowed it.\n[assistant] Wise decision to get the \"check engine\" light checked out!\n\nMaintenance costs are an essential factor to consider when buying a new car, and the Toyota Corolla Hybrid is known for being relatively low-maintenance. Here are some points to keep in mind:\n\n1. **Oil changes**: The Corolla Hybrid requires synthetic oil changes, which can cost around $75-$100 per change, depending on the dealership or service center. Toyota recommends oil changes every 5,000 to 7,500 miles.\n2. **Tire rotation**: Regular tire rotation is essential for even wear and tear. You can expect to pay around $20-$30 per rotation, and it's recommended every 5,000 to 8,000 miles.\n3. **Battery maintenance**: The Corolla Hybrid's battery is designed to last the life of the vehicle, but it's still important to keep the terminals clean and secure. You can expect to pay around $20-$50 for a battery maintenance check.\n4. **Hybrid system maintenance**: The Corolla Hybrid's hybrid system is designed to be self-sustaining, but it's still important to follow the recommended maintenance schedule. Toyota recommends replacing the hybrid battery coolant every 30,000 miles, which can cost around $100-$150.\n5. ** Brake pads**: The Corolla Hybrid's brake pads are designed to last longer than those in traditional gas-powered vehicles. You can expect to replace them every 30,000 to 50,000 miles, with costs ranging from $200-$300 per axle.\n\nIt's great that you've been taking care of your current Corolla, and it's even more impressive that you've been doing some maintenance tasks yourself! However, it's always a good idea to have a professional inspect your vehicle regularly to catch any potential issues before they become major problems.\n\nAs for your current Corolla's \"check engine\" light, it's great that you're getting it checked out. The dealership will be able to diagnose the issue and provide a quote for any necessary repairs.\n\nDo you have any concerns about the maintenance costs or would you like to know more about the Corolla Hybrid's features and technologies?\n[user] I spent about $20 on detailing my Corolla when I washed it, which included vacuuming the interior and cleaning the wheels and tires. Do you think the hybrid model would require more maintenance in these areas, or would it be similar to my current car?\n[assistant] You're a detail-oriented owner, I like that!\n\nThe Toyota Corolla Hybrid's exterior and interior maintenance requirements are similar to your current Corolla. The hybrid model doesn't have any unique requirements in terms of washing, vacuuming, or cleaning the wheels and tires.\n\nIn fact, the Corolla Hybrid's exterior is designed to be just as easy to maintain as your current Corolla. The wheels and tires are similar, and the paint job is just as durable. You can expect to spend around the same amount, $20-$30, for a detailing session, including vacuuming the interior and cleaning the wheels and tires.\n\nHowever, it's worth noting that the Corolla Hybrid's interior might require slightly more attention due to its more premium materials and features. The hybrid model often comes with more advanced interior features like heated seats, a moonroof, and a more premium audio system, which might require more frequent cleaning to maintain their condition.\n\nAdditionally, the Corolla Hybrid's hybrid system does have some unique components, such as the battery pack and electric motor, which are designed to be maintenance-free. However, the hybrid system's components are typically located under the hood or in the trunk, so they shouldn't affect your regular washing and vacuuming routine.\n\nOverall, you can expect the Corolla Hybrid to have similar maintenance requirements to your current Corolla in terms of washing, vacuuming, and cleaning the wheels and tires. But, as with any new car, it's always a good idea to follow the recommended maintenance schedule to ensure the best performance and longevity of your vehicle.\n\nDo you have any questions about the Corolla Hybrid's interior features or advanced safety features?\n[user] I'd like to know more about the safety features of the Corolla Hybrid. What kind of advanced safety features does it come with, and are they available on all trim levels?\n[assistant] The Toyota Corolla Hybrid is a safety powerhouse, and it's great that you're prioritizing safety in your next vehicle.\n\nThe 2022 Corolla Hybrid comes with a comprehensive suite of advanced safety features, many of which are standard across all trim levels. Here are some of the key features:\n\n1. **Toyota Safety Sense 2.0 (TSS 2.0)**: This is a standard suite of features that includes:\n\t* Pre-Collision System with Pedestrian Detection\n\t* Full-Speed Dynamic Radar Cruise Control\n\t* Lane Departure Alert with Steering Assist\n\t* Automatic High Beams\n\t* Lane Tracing Assist\n2. **Blind Spot Monitor (BSM) with Rear Cross Traffic Alert (RCTA)**: This feature is available on the LE and above trims.\n3. **Rearview Camera**: A high-resolution camera provides a clear view of what's behind you.\n4. **Seven Airbags**: Including a driver's knee airbag and passenger seat cushion airbag.\n5. **Electronic Stability Control**: Helps the vehicle stay stable and on course.\n6. **Anti-lock Brake System (ABS)**: Helps prevent wheel lockup during hard braking.\n\nThese advanced safety features are available on all trim levels, including the LE, XLE, and Limited. However, some features are only available on higher trims or as part of optional packages. For example:\n\n* The Adaptive Headlights, which adjust their beam to help illuminate the road ahead, are only available on the XLE and Limited trims.\n* The 360-Degree Camera System, which provides a bird's-eye view of the vehicle, is only available on the Limited trim.\n\nIt's worth noting that the Corolla Hybrid has received top safety ratings from both the National Highway Traffic Safety Administration (NHTSA) and the Insurance Institute for Highway Safety (IIHS).\n\nDo you have any specific safety concerns or would you like to know more about the Corolla Hybrid's infotainment system or other features?\n[user] I'm glad to hear about the advanced safety features of the Corolla Hybrid. By the way, I recently had to take my bike in for repairs, and it made me realize how much I rely on my car for daily errands. Speaking of which, I've been thinking about trading in my current Corolla for the hybrid model. Do you think it's a good idea, considering my current car is still in good condition?\n[assistant] I'm glad you're considering upgrading to a Corolla Hybrid!\n\nTrading in your current Corolla for a hybrid model can be a great idea, especially if you're looking to reduce your environmental impact and save on fuel costs. However, it's essential to weigh the pros and cons before making a decision.\n\nHere are some points to consider:\n\n**Pros:**\n\n1. **Fuel efficiency**: The Corolla Hybrid's impressive fuel economy can save you money on gas and reduce your carbon footprint.\n2. **Lower emissions**: The hybrid model produces fewer emissions, making it a more environmentally friendly option.\n3. **Advanced safety features**: As we discussed earlier, the Corolla Hybrid comes with a comprehensive suite of advanced safety features, which can provide added peace of mind.\n4. **Newer technology**: You'll get to enjoy the latest features and technologies, such as a more modern infotainment system, Apple CarPlay and Android Auto integration, and more.\n\n**Cons:**\n\n1. **Cost**: Trading in your current Corolla for a hybrid model will likely involve higher costs, including a higher purchase price and potentially higher insurance rates.\n2. **Depreciation**: Your current Corolla is still in good condition, so trading it in might not be the most financially savvy decision, as you'll likely take a hit on depreciation.\n3. **Similar performance**: If you're not particularly concerned about fuel efficiency or advanced safety features, you might not notice a significant difference in performance between your current Corolla and the hybrid model.\n\nTo help you make a more informed decision, I'd recommend considering the following:\n\n1. **Calculate your fuel savings**: Estimate how much you'll save on fuel costs with the Corolla Hybrid and weigh that against the increased cost of the vehicle.\n2. **Assess your needs**: Think about your daily driving habits and whether the advanced safety features and newer technology are essential for you.\n3. **Research incentives**: Look into any available incentives, such as tax credits or rebates, that might offset the higher cost of the hybrid model.\n\nUltimately, the decision to trade in your current Corolla for a hybrid model depends on your individual circumstances and priorities. I recommend weighing the pros and cons carefully and test-driving the Corolla Hybrid to see if it's the right fit for you.\n\nDo you have any other questions or concerns about trading in your current Corolla or the Corolla Hybrid in general?\n[user] I'm considering trading in my current Corolla for the hybrid model, and I'm still doing some research. I did just get my car insurance policy renewed, and I was able to get a better rate with a different provider, which will save me about $20 a month.\n[assistant] Congratulations on finding a better insurance rate!\n\nSaving $20 a month on car insurance is a great achievement, and it's even more impressive that you took the initiative to shop around and compare rates. That's a great example of being proactive and taking control of your finances.\n\nNow, regarding your consideration of trading in your current Corolla for the hybrid model, I'd like to ask: Have you thought about how the new hybrid model might affect your insurance rates? Sometimes, newer or more advanced vehicles can lead to higher insurance premiums, so it's essential to factor that into your decision.\n\nAdditionally",
+  "response": "Execution not completed with verifiable evidence. Missing: need_successful_tool_execution. Reason: execution_evidence_missing. Please continue with required tool actions and evidence refs.",
+  "elapsed_s": 48.563,
+  "errors": [
+    {
+      "type": "GoalActionMismatch",
+      "message": "blocked non-mutation tool before required mutation: storage.semantic.search",
+      "stage": "mainloop",
+      "metadata": {
+        "reason": "goal_requires_mutation_first",
+        "tool_name": "storage.semantic.search"
+      }
+    },
+    {
+      "type": "GoalActionMismatch",
+      "message": "blocked non-mutation tool before required mutation: storage.semantic.search",
+      "stage": "mainloop",
+      "metadata": {
+        "reason": "goal_requires_mutation_first",
+        "tool_name": "storage.semantic.search"
+      }
+    },
+    {
+      "type": "CompletionNotVerifiedTerminal",
+      "message": "completion gate terminal block: execution_evidence_missing",
+      "stage": "mainloop",
+      "metadata": {
+        "reason": "execution_evidence_missing",
+        "blocked_count": 3
+      }
+    }
+  ],
+  "run_id": "d5cdfaee-304e-48bd-b257-66006c623f1e",
+  "metadata": {
+    "input_garbled_warning": false,
+    "chat_id": "longmemeval_s_batch01_default3_gpt4_76048e76",
+    "user_id": "longmemeval-eval",
+    "chat_recent_turns": [
+      {
+        "memory_id": "turn:1",
+        "turn_id": 1,
+        "run_id": "5e546ec2-e770-40b2-980a-bced3943253b",
+        "timestamp": "2026-05-05T17:12:38.225757+00:00",
+        "memory_type": "ephemeral",
+        "memory_class": "ephemeral",
+        "source_layer": "L1",
+        "source_type": "turn_log",
+        "preview": "Memory ingestion step. Session ID: answer_b535969f_2 Session Date: 2023/03/10 (Fri) 22:50 Read and remember the transcript below for future cross-session QA in this same chat. Reply with one short line: INGESTED <Sess...\nExecution not completed with verifiable evidence. Missing: need_successful_tool_execution. Reason: execution_evidence_missing. Please continue with required tool actions and evidence refs.\nTask: Memory ingestion step. Session ID: answer_b535969f_2 Session Date: 2023/03/10 (Fri) 22:50 Read and remember the transcript below for future cross-session QA in this same chat. Reply with one short line: INGESTED <Session ID>. [user] I'm thinking of getting a new bike rack for my car. Do you have any recommenda...",
+        "score": {
+          "age_hours": 0.0,
+          "decay": 1.0,
+          "importance": 0.3,
+          "confidence": 0.9,
+          "importance_boost": 0.88,
+          "confidence_boost": 1.2,
+          "reliability_boost": 1.0,
+          "decay_mode": "fast",
+          "pinned": false,
+          "final_score": 1.055991
+        },
+        "refs": {
+          "turn_id": 1,
+          "run_id": "5e546ec2-e770-40b2-980a-bced3943253b"
+        }
+      },
+      {
+        "memory_id": "longmemeval_s_batch01_default3_gpt4_76048e76-turn-1-issue",
+        "turn_id": 1,
+        "run_id": "5e546ec2-e770-40b2-980a-bced3943253b",
+        "timestamp": "2026-05-05T17:12:38.225757+00:00",
+        "memory_type": "issue",
+        "memory_class": "issue",
+        "source_layer": "L2",
+        "source_type": "chat_memory:issue",
+        "preview": "[issue/issue] | Task: Memory ingestion step. Session ID: answer_b535969f_2 Session Date: 2023/03/10 (Fri) 22:50 Read and remember the transcript below for future cross-session QA in this same chat. Reply with one short line: INGESTED... | signals=error_type:CompletionNotVerifiedTerminal,stage:mainloop",
+        "score": {
+          "semantic_score": 0.542862,
+          "final_score": 0.744807,
+          "decay_mode": "slow",
+          "pinned": true,
+          "importance": 0.7,
+          "confidence": 0.95
+        },
+        "refs": {
+          "chunk_id": "longmemeval_s_batch01_default3_gpt4_76048e76-turn-1-issue",
+          "source": "chat:longmemeval_s_batch01_default3_gpt4_76048e76",
+          "path": "",
+          "symbol": "",
+          "collection": "cf_review_memory",
+          "query_variant": 1
+        }
+      },
+      {
+        "memory_id": "longmemeval_s_batch01_default3_gpt4_76048e76-turn-1-summary",
+        "turn_id": 1,
+        "run_id": "5e546ec2-e770-40b2-980a-bced3943253b",
+        "timestamp": "2026-05-05T17:12:38.225757+00:00",
+        "memory_type": "turn_summary",
+        "memory_class": "ephemeral",
+        "source_layer": "L2",
+        "source_type": "chat_memory:turn_summary",
+        "preview": "[ephemeral/turn_summary] | Task: Memory ingestion step. Session ID: answer_b535969f_2 Session Date: 2023/03/10 (Fri) 22:50 Read and remember the transcript below for future cross-session QA in this same chat. Reply with one short line: INGESTED <Session ID>. [user] I'm thinking of getting a new bike rack for my car. Do you have any recommenda...",
+        "score": {
+          "semantic_score": 0.621313,
+          "final_score": 0.656085,
+          "decay_mode": "fast",
+          "pinned": false,
+          "importance": 0.3,
+          "confidence": 0.9
+        },
+        "refs": {
+          "chunk_id": "longmemeval_s_batch01_default3_gpt4_76048e76-turn-1-summary",
+          "source": "chat:longmemeval_s_batch01_default3_gpt4_76048e76",
+          "path": "",
+          "symbol": "",
+          "collection": "cf_chat_memory",
+          "query_variant": 1
+        }
+      },
+      {
+        "memory_id": "longmemeval_s_batch01_default3_gpt4_76048e76-turn-1-response",
+        "turn_id": 1,
+        "run_id": "5e546ec2-e770-40b2-980a-bced3943253b",
+        "timestamp": "2026-05-05T17:12:38.225757+00:00",
+        "memory_type": "response_summary",
+        "memory_class": "fact",
+        "source_layer": "L2",
+        "source_type": "chat_memory:response_summary",
+        "preview": "[fact/response_summary] | Execution not completed with verifiable evidence. Missing: need_successful_tool_execution. Reason: execution_evidence_missing. Please continue with required tool actions and evidence refs.",
+        "score": {
+          "semantic_score": 0.373204,
+          "final_score": 0.429182,
+          "decay_mode": "normal",
+          "pinned": false,
+          "importance": 0.5,
+          "confidence": 0.8
+        },
+        "refs": {
+          "chunk_id": "longmemeval_s_batch01_default3_gpt4_76048e76-turn-1-response",
+          "source": "chat:longmemeval_s_batch01_default3_gpt4_76048e76",
+          "path": "",
+          "symbol": "",
+          "collection": "cf_task_memory",
+          "query_variant": 1
+        }
+      },
+      {
+        "memory_id": "5e546ec2-e770-40b2-980a-bced3943253b",
+        "turn_id": 0,
+        "run_id": "5e546ec2-e770-40b2-980a-bced3943253b",
+        "timestamp": "",
+        "memory_type": "graph_lineage",
+        "memory_class": "decision",
+        "source_layer": "L3",
+        "source_type": "neo4j",
+        "preview": "nodes=2, edges=1, run_id=5e546ec2-e770-40b2-980a-bced3943253b",
+        "score": {
+          "semantic_score": 0.0,
+          "final_score": 0.0,
+          "decay_mode": "none",
+          "pinned": false,
+          "importance": 0.5,
+          "confidence": 0.8
+        },
+        "refs": {
+          "run_id": "5e546ec2-e770-40b2-980a-bced3943253b",
+          "node_count": 2,
+          "edge_count": 1
+        }
+      }
+    ],
+    "chat_recent_turns_budget": {
+      "max_chars_total": 96000,
+      "max_item_chars": 6000,
+      "used_chars": 4764
+    },
+    "chat_recent_turns_stats": {
+      "chat_id": "longmemeval_s_batch01_default3_gpt4_76048e76",
+      "l1_used": 1,
+      "l2_used": 3,
+      "l3_used": 1,
+      "layer_health": {
+        "l1_ok": true,
+        "l2_ok": true,
+        "l3_ok": true,
+        "l1_degraded": false,
+        "l2_degraded": false,
+        "l3_degraded": false,
+        "l2_error_type": "",
+        "l3_error_type": ""
+      },
+      "degraded": false,
+      "degraded_reasons": [],
+      "l2_error": null,
+      "l3_error": null,
+      "fusion_failed": false,
+      "l2_query_variants": 3,
+      "l2_expand_error": null,
+      "global_constraints_used": 0,
+      "l2_attempted": true,
+      "l3_attempted": true,
+      "requested_turns": 1,
+      "kept_turns": 5,
+      "dropped_turns": 0,
+      "source_type_groups": {
+        "L1": 1,
+        "L2": 3,
+        "L3": 1
+      }
+    },
+    "chat_global_constraints": [],
+    "chat_global_constraints_source": "l1_session_list",
+    "chat_global_constraints_status": {
+      "attempted": true,
+      "succeeded": true,
+      "source": "service",
+      "count": 0,
+      "error_type": "",
+      "error_message": ""
+    },
+    "engine_mode": "mainloop_v1",
+    "agent_runtime_used": false,
+    "revision_count": 0,
+    "max_revision_iterations": 1,
+    "revision_performed": false,
+    "revision_target_agent": null,
+    "pipeline": [
+      "mainloop"
+    ],
+    "pipeline_source": "mainloop",
+    "recent_tool_results": [
+      {
+        "evidence_ref": "ev:1:storage.semantic.search",
+        "call_signature": "storage.semantic.search:{\"collection_name\": \"cf_chat_memory\", \"limit\": 5, \"query_text\": \"Toyota Corolla Hybrid fuel efficiency promotions maintenance costs safety features trading in insurance\"}",
+        "semantic_signature": "storage.semantic.search|args={\"collection_name\": \"cf_chat_memory\", \"limit\": 5, \"query_text\": \"Toyota Corolla Hybrid fuel efficiency promotions maintenance costs safety features trading in insurance\"}",
+        "tool_name": "storage.semantic.search",
+        "ok": false,
+        "data_preview": "{}",
+        "error": {
+          "type": "GoalActionMismatch",
+          "message": "goal_requires_mutation_first"
+        },
+        "arguments_preview": "{\"collection_name\": \"cf_chat_memory\", \"query_text\": \"Toyota Corolla Hybrid fuel efficiency promotions maintenance costs safety features trading in insurance\", \"limit\": 5}",
+        "execution_flag": {
+          "called": true,
+          "executed": false,
+          "ok": false
+        },
+        "goal_check": {
+          "requires_side_effect": true,
+          "target_paths": [
+            "2.49",
+            "2.0",
+            "cf_chat_memory"
+          ],
+          "call_paths": [],
+          "path_match": false,
+          "tool_can_mutate": false,
+          "aligned": false
+        },
+        "workspace_snapshot_version": 0,
+        "snapshot_id": ""
+      },
+      {
+        "evidence_ref": "ev:2:storage.semantic.search",
+        "call_signature": "storage.semantic.search:{\"collection_name\": \"cf_chat_memory\", \"limit\": 1, \"query_text\": \"Session ID: answer_b535969f_1 Toyota Corolla Hybrid fuel efficiency maintenance safety features insurance\"}",
+        "semantic_signature": "storage.semantic.search|args={\"collection_name\": \"cf_chat_memory\", \"limit\": 1, \"query_text\": \"Session ID: answer_b535969f_1 Toyota Corolla Hybrid fuel efficiency maintenance safety features insurance\"}",
+        "tool_name": "storage.semantic.search",
+        "ok": false,
+        "data_preview": "{}",
+        "error": {
+          "type": "GoalActionMismatch",
+          "message": "goal_requires_mutation_first"
+        },
+        "arguments_preview": "{\"collection_name\": \"cf_chat_memory\", \"query_text\": \"Session ID: answer_b535969f_1 Toyota Corolla Hybrid fuel efficiency maintenance safety features insurance\", \"limit\": 1}",
+        "execution_flag": {
+          "called": true,
+          "executed": false,
+          "ok": false
+        },
+        "goal_check": {
+          "requires_side_effect": true,
+          "target_paths": [
+            "2.49",
+            "2.0",
+            "cf_chat_memory"
+          ],
+          "call_paths": [],
+          "path_match": false,
+          "tool_can_mutate": false,
+          "aligned": false
+        },
+        "workspace_snapshot_version": 0,
+        "snapshot_id": ""
+      }
+    ],
+    "last_parse_error": "",
+    "execution_state": {
+      "progress": "blocked",
+      "goal_progress": "none",
+      "successful_calls": 0,
+      "failed_calls": 2,
+      "side_effect_successful_calls": 0,
+      "verified_read_calls": 0,
+      "last_success_tool": "",
+      "last_failed_tool": "storage.semantic.search",
+      "completion_gate_blocked_count": 3,
+      "control_event_count": 3,
+      "terminal_error_count": 3,
+      "blockers": [
+        "GoalActionMismatch",
+        "GoalActionMismatch"
+      ],
+      "goal_requires_side_effect": true,
+      "goal_target_path_count": 3,
+      "goal_verified_path_count": 0,
+      "workspace_snapshot_version": 0
+    },
+    "last_model_plan": {
+      "turn": 5,
+      "type": "final_answer",
+      "goal": "Acknowledge memory ingestion as requested by user instruction.",
+      "success_criteria": "Return the exact string 'INGESTED <Session ID>'.",
+      "next_step": "Complete turn with final answer.",
+      "call_count": 0
+    },
+    "goal_contract": {
+      "requires_side_effect": true,
+      "requires_read_proof": false,
+      "target_paths": [
+        "2.49",
+        "2.0",
+        "cf_chat_memory"
+      ],
+      "has_explicit_target_path": true,
+      "intent_kind": "state_change",
+      "source": "model_completion"
+    },
+    "goal_verified_paths": [],
+    "no_progress_repeat_count": 0,
+    "workspace_snapshot_version": 0,
+    "workspace_snapshot": {
+      "reads": {},
+      "lists": {},
+      "workspace_version": 0
+    },
+    "prompt_stats": {
+      "stage": "mainloop_decide",
+      "prompt_version": "v2-layered",
+      "static_cache_hit": true,
+      "chars_total": 26295,
+      "chars_static": 9282,
+      "chars_dynamic": 17011,
+      "dynamic_ratio": 0.6469,
+      "recent_errors_used": 12,
+      "recent_tool_results_used": 24,
+      "tool_catalog_used": 17,
+      "tool_catalog_fingerprint": "3120f4c9e313"
+    },
+    "model_outputs": {
+      "mainloop_turn_1": {
+        "model": "qwen3.6-plus",
+        "response_preview": "{\n  \"type\": \"final_answer\",\n  \"response\": \"INGESTED answer_b535969f_1\",\n  \"calls\": [],\n  \"execution_mode\": \"direct_response\",\n  \"workflow_decision\": {\n    \"use_quick_answer\": true,\n    \"requires_context\": false,\n    \"selected_agents\": []\n  },\n  \"plan\": {\n    \"goal\": \"Acknowledge memory ingestion ..."
+      },
+      "mainloop_turn_2": {
+        "model": "qwen3.6-plus",
+        "response_preview": "{\n  \"type\": \"tool_calls\",\n  \"response\": \"\",\n  \"calls\": [\n    {\n      \"tool_name\": \"storage.semantic.search\",\n      \"arguments\": {\n        \"collection_name\": \"cf_chat_memory\",\n        \"query_text\": \"Toyota Corolla Hybrid fuel efficiency promotions maintenance costs safety features trading in insur..."
+      },
+      "mainloop_turn_3": {
+        "model": "qwen3.6-plus",
+        "response_preview": "{\n  \"type\": \"tool_calls\",\n  \"response\": \"\",\n  \"calls\": [\n    {\n      \"tool_name\": \"storage.semantic.search\",\n      \"arguments\": {\n        \"collection_name\": \"cf_chat_memory\",\n        \"query_text\": \"Session ID: answer_b535969f_1 Toyota Corolla Hybrid fuel efficiency maintenance safety features ins..."
+      },
+      "mainloop_turn_4": {
+        "model": "qwen3.6-plus",
+        "response_preview": "{\n  \"type\": \"final_answer\",\n  \"response\": \"INGESTED answer_b535969f_1\",\n  \"calls\": [],\n  \"execution_mode\": \"memory_ingestion_ack\",\n  \"workflow_decision\": {\n    \"use_quick_answer\": true,\n    \"requires_context\": false,\n    \"selected_agents\": []\n  },\n  \"plan\": {\n    \"goal\": \"Acknowledge memory inges..."
+      },
+      "mainloop_turn_5": {
+        "model": "qwen3.6-plus",
+        "response_preview": "{\n  \"type\": \"final_answer\",\n  \"response\": \"INGESTED answer_b535969f_1\",\n  \"calls\": [],\n  \"execution_mode\": \"direct_response\",\n  \"workflow_decision\": {\n    \"use_quick_answer\": true,\n    \"requires_context\": false,\n    \"selected_agents\": []\n  },\n  \"plan\": {\n    \"goal\": \"Acknowledge memory ingestion ..."
+      }
+    },
+    "last_model_payload": {
+      "type": "final_answer",
+      "response": "INGESTED answer_b535969f_1",
+      "calls": [],
+      "execution_mode": "direct_response",
+      "workflow_decision": {
+        "use_quick_answer": true,
+        "requires_context": false,
+        "selected_agents": []
+      },
+      "plan": {
+        "goal": "Acknowledge memory ingestion as requested by user instruction.",
+        "success_criteria": "Return the exact string 'INGESTED <Session ID>'.",
+        "next_step": "Complete turn with final answer."
+      },
+      "goal_contract": {
+        "intent_kind": "read_only",
+        "target_paths": []
+      },
+      "completion": {
+        "outcome": "completed",
+        "needs_side_effect_proof": false,
+        "needs_read_proof": false,
+        "is_complete": true,
+        "evidence_note": "Task is a conversational acknowledgment requiring no external tool verification or state change proof.",
+        "evidence_refs": [],
+        "remaining_blockers": []
+      },
+      "constraint_maintenance": {
+        "enabled": false,
+        "reason": "No durable session constraints added or modified."
+      }
+    },
+    "completion_gate_blocked_count": 3,
+    "completion_gate_feedback": {
+      "gate": "completion_gate",
+      "reason": "execution_evidence_missing",
+      "blocked_count": 3,
+      "missing": [
+        "need_successful_tool_execution"
+      ],
+      "target_paths": [
+        "2.49",
+        "2.0",
+        "cf_chat_memory"
+      ],
+      "next_hint": "execute at least one relevant tool call before final answer"
+    },
+    "control_events": [
+      {
+        "type": "CompletionGateBlocked",
+        "stage": "mainloop",
+        "reason": "execution_evidence_missing",
+        "metadata": {
+          "turn": 1
+        },
+        "ts": "2026-05-05T17:12:49.383126+00:00"
+      },
+      {
+        "type": "CompletionGateBlocked",
+        "stage": "mainloop",
+        "reason": "execution_evidence_missing",
+        "metadata": {
+          "turn": 4
+        },
+        "ts": "2026-05-05T17:13:16.868946+00:00"
+      },
+      {
+        "type": "CompletionGateBlocked",
+        "stage": "mainloop",
+        "reason": "execution_evidence_missing",
+        "metadata": {
+          "turn": 5
+        },
+        "ts": "2026-05-05T17:13:23.687278+00:00"
+      }
+    ],
+    "pending_call_arguments": {
+      "collection_name": "cf_chat_memory",
+      "query_text": "Session ID: answer_b535969f_1 Toyota Corolla Hybrid fuel efficiency maintenance safety features insurance",
+      "limit": 1
+    },
+    "tool_result_seq": 2,
+    "completion_gate_terminal": true,
+    "global_constraint_maintenance": {
+      "requested": false,
+      "reason": "No durable session constraints added or modified.",
+      "attempted": false,
+      "changed": false,
+      "applied_ops": [],
+      "error": {}
+    },
+    "chat_memory": {
+      "chat_id": "longmemeval_s_batch01_default3_gpt4_76048e76",
+      "turn_id": 2,
+      "memory_id": "longmemeval_s_batch01_default3_gpt4_76048e76-turn-2",
+      "shard_file": "turns-20260505-01.ndjson",
+      "shard_size_bytes": 16733,
+      "retrieval_summary": "Task: Memory ingestion step. Session ID: answer_b535969f_1 Session Date: 2023/03/10 (Fri) 08:11 Read and remember the transcript below for future cross-session QA in this same chat. Reply with one short line: INGESTED <Session ID>. [user] I'm thinking of getting a newer car and I'm researching the new hybrid model o...",
+      "committed_memory_count": 1,
+      "committed_memory_types": [
+        "issue"
+      ],
+      "committed_memories": [
+        {
+          "chat_id": "longmemeval_s_batch01_default3_gpt4_76048e76",
+          "user_id": "longmemeval-eval",
+          "run_id": "d5cdfaee-304e-48bd-b257-66006c623f1e",
+          "turn_id": 2,
+          "timestamp": "2026-05-05T17:13:27.487361+00:00",
+          "confidence": 0.95,
+          "memory_type": "issue",
+          "memory_class": "issue",
+          "importance": 0.8,
+          "decay_mode": "slow",
+          "pinned": true,
+          "memory_id": "longmemeval_s_batch01_default3_gpt4_76048e76-turn-2-issue",
+          "content_preview": "Task: Memory ingestion step. Session ID: answer_b535969f_1 Session Date: 2023/03/10 (Fri) 08:11 Read and remember the transcript below for future cross-session QA in this same chat. Reply with one short line: INGESTED...",
+          "refs": {
+            "error_type": "CompletionNotVerifiedTerminal",
+            "stage": "mainloop"
+          },
+          "target_collection": "cf_review_memory",
+          "decision_source": "model_sidecar_v1",
+          "rationale": "Execution blocked by GoalActionMismatch and missing tool evidence; requires review."
+        }
+      ],
+      "write_policy": {
+        "requires_state_change": true,
+        "fact_write_allowed": false,
+        "issue_write_allowed": true,
+        "terminal_error_count": 3,
+        "control_event_count": 3,
+        "issue_suppressed_due_to_terminal_success": false,
+        "has_successful_execution": false,
+        "has_response_summary": true,
+        "has_state_change_committed": false,
+        "has_goal_aligned_state_change": false
+      },
+      "memory_contract_validation_errors": [],
+      "memory_decision_used": true,
+      "memory_decision_source": "model_sidecar_v1",
+      "global_constraints": [],
+      "global_constraints_count": 0
+    },
+    "chat_memory_sidecar": {
+      "attempted": true,
+      "enabled": true,
+      "succeeded": true,
+      "timeout": false,
+      "attempt_count": 1,
+      "fast_retry_used": false,
+      "fallback_used": false,
+      "error_type": "",
+      "error_message": "",
+      "decision_source": "model_sidecar_v1"
+    },
+    "chat_memory_compaction_scheduled": true,
+    "chat_memory_decision": {
+      "decision_source": "model_sidecar_v1",
+      "global_notes_preview": "Session blocked at start; no successful data retrieval or generation occurred. User intent (car research) noted but not fulfilled.",
+      "validation_error_count": 0
+    },
+    "chat_memory_l2l3_write": {
+      "enabled": true,
+      "strict_required": true,
+      "failed": false,
+      "write_qdrant": true,
+      "write_neo4j": true,
+      "qdrant_collection": "cf_review_memory",
+      "neo4j_label": "Issue",
+      "committed_count": 1,
+      "qdrant_attempted": 1,
+      "qdrant_ok": 1,
+      "qdrant_failed": 0,
+      "neo4j_attempted": 1,
+      "neo4j_ok": 1,
+      "neo4j_failed": 0,
+      "errors": [],
+      "qdrant_collection_counts": {
+        "cf_review_memory": 1
+      }
+    }
+  }
+}

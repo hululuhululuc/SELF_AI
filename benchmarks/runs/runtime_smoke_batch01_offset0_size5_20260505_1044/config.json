@@ -1,0 +1,30 @@
+{
+  "schema_version": "light_public_eval.v1",
+  "created_at": "2026-05-05T02:43:10+00:00",
+  "args": {
+    "stage": "runtime_smoke",
+    "run_name": "runtime_smoke_batch01_offset0_size5_20260505_1044",
+    "limit": 0,
+    "offset": 0,
+    "batch_size": 5,
+    "stop_on_failure": true
+  },
+  "python": "3.12.7 (tags/v3.12.7:0b05ead, Oct  1 2024, 03:06:41) [MSC v.1941 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "project_root": "D:\\codex_ws\\codingagent\\codeforge",
+  "settings": {
+    "router_default_tier": "balanced",
+    "router_use_selector": false,
+    "model_fast": "qwen3.5-flash-2026-02-23",
+    "model_balanced": "qwen3.6-plus-2026-04-02",
+    "model_high": "qwen3.6-max-preview",
+    "model_code": "kimi-k2.6",
+    "permission_mode": "dev_write",
+    "chat_memory_enabled": true,
+    "chat_memory_fusion_enabled": true,
+    "redis_enabled": true,
+    "qdrant_url": "http://localhost:6333",
+    "neo4j_enabled": true,
+    "graph_read_enabled": false
+  }
+}

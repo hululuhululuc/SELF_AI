@@ -1,0 +1,206 @@
+{
+  "generated_at": "2026-05-05T18:25:43Z",
+  "stop_reason": "completed",
+  "case_summaries": [
+    {
+      "case": "A",
+      "case_name": "preference_persistence",
+      "mode": "ON",
+      "chat_id": "m2eval_after_patch_abcde-a-on",
+      "turn_count": 4,
+      "validation_ok": true,
+      "validation_reason": "",
+      "quota_exhausted": false,
+      "avg_elapsed_ms": 25663.08,
+      "avg_tool_calls": 0.0,
+      "total_errors": 3,
+      "L1_hits": 6,
+      "L2_hits": 11,
+      "L3_hits": 5
+    },
+    {
+      "case": "B",
+      "case_name": "file_state_consistency",
+      "mode": "ON",
+      "chat_id": "m2eval_after_patch_abcde-b-on",
+      "turn_count": 4,
+      "validation_ok": false,
+      "validation_reason": "final_content_mismatch",
+      "quota_exhausted": false,
+      "avg_elapsed_ms": 21253.63,
+      "avg_tool_calls": 0.0,
+      "total_errors": 0,
+      "L1_hits": 6,
+      "L2_hits": 12,
+      "L3_hits": 5
+    },
+    {
+      "case": "C",
+      "case_name": "issue_fix_reuse",
+      "mode": "ON",
+      "chat_id": "m2eval_after_patch_abcde-c-on",
+      "turn_count": 4,
+      "validation_ok": true,
+      "validation_reason": "",
+      "quota_exhausted": false,
+      "avg_elapsed_ms": 29509.27,
+      "avg_tool_calls": 0.0,
+      "total_errors": 3,
+      "L1_hits": 6,
+      "L2_hits": 15,
+      "L3_hits": 5
+    },
+    {
+      "case": "D",
+      "case_name": "research_summary_continuity",
+      "mode": "ON",
+      "chat_id": "m2eval_after_patch_abcde-d-on",
+      "turn_count": 4,
+      "validation_ok": false,
+      "validation_reason": "missing_redis",
+      "quota_exhausted": false,
+      "avg_elapsed_ms": 19838.11,
+      "avg_tool_calls": 0.0,
+      "total_errors": 0,
+      "L1_hits": 6,
+      "L2_hits": 12,
+      "L3_hits": 5
+    },
+    {
+      "case": "E",
+      "case_name": "compaction_cold_recall",
+      "mode": "ON",
+      "chat_id": "m2eval_after_patch_abcde-e-on",
+      "turn_count": 8,
+      "validation_ok": false,
+      "validation_reason": "compaction_not_observed",
+      "quota_exhausted": false,
+      "avg_elapsed_ms": 17178.28,
+      "avg_tool_calls": 0.0,
+      "total_errors": 0,
+      "L1_hits": 28,
+      "L2_hits": 53,
+      "L3_hits": 13
+    }
+  ],
+  "compare_rows": [
+    {
+      "case": "A",
+      "on_validation_ok": true,
+      "off_validation_ok": false,
+      "on_avg_elapsed_ms": 25663.08,
+      "off_avg_elapsed_ms": null,
+      "on_avg_tool_calls": 0.0,
+      "off_avg_tool_calls": null,
+      "on_hits": {
+        "L1": 6,
+        "L2": 11,
+        "L3": 5
+      },
+      "off_hits": {
+        "L1": null,
+        "L2": null,
+        "L3": null
+      }
+    },
+    {
+      "case": "B",
+      "on_validation_ok": false,
+      "off_validation_ok": false,
+      "on_avg_elapsed_ms": 21253.63,
+      "off_avg_elapsed_ms": null,
+      "on_avg_tool_calls": 0.0,
+      "off_avg_tool_calls": null,
+      "on_hits": {
+        "L1": 6,
+        "L2": 12,
+        "L3": 5
+      },
+      "off_hits": {
+        "L1": null,
+        "L2": null,
+        "L3": null
+      }
+    },
+    {
+      "case": "C",
+      "on_validation_ok": true,
+      "off_validation_ok": false,
+      "on_avg_elapsed_ms": 29509.27,
+      "off_avg_elapsed_ms": null,
+      "on_avg_tool_calls": 0.0,
+      "off_avg_tool_calls": null,
+      "on_hits": {
+        "L1": 6,
+        "L2": 15,
+        "L3": 5
+      },
+      "off_hits": {
+        "L1": null,
+        "L2": null,
+        "L3": null
+      }
+    },
+    {
+      "case": "D",
+      "on_validation_ok": false,
+      "off_validation_ok": false,
+      "on_avg_elapsed_ms": 19838.11,
+      "off_avg_elapsed_ms": null,
+      "on_avg_tool_calls": 0.0,
+      "off_avg_tool_calls": null,
+      "on_hits": {
+        "L1": 6,
+        "L2": 12,
+        "L3": 5
+      },
+      "off_hits": {
+        "L1": null,
+        "L2": null,
+        "L3": null
+      }
+    },
+    {
+      "case": "E",
+      "on_validation_ok": false,
+      "off_validation_ok": false,
+      "on_avg_elapsed_ms": 17178.28,
+      "off_avg_elapsed_ms": null,
+      "on_avg_tool_calls": 0.0,
+      "off_avg_tool_calls": null,
+      "on_hits": {
+        "L1": 28,
+        "L2": 53,
+        "L3": 13
+      },
+      "off_hits": {
+        "L1": null,
+        "L2": null,
+        "L3": null
+      }
+    }
+  ],
+  "failures": [
+    {
+      "case": "B",
+      "mode": "ON",
+      "chat_id": "m2eval_after_patch_abcde-b-on",
+      "type": "ValidationFailed",
+      "reason": "final_content_mismatch"
+    },
+    {
+      "case": "D",
+      "mode": "ON",
+      "chat_id": "m2eval_after_patch_abcde-d-on",
+      "type": "ValidationFailed",
+      "reason": "missing_redis"
+    },
+    {
+      "case": "E",
+      "mode": "ON",
+      "chat_id": "m2eval_after_patch_abcde-e-on",
+      "type": "ValidationFailed",
+      "reason": "compaction_not_observed"
+    }
+  ]
+}

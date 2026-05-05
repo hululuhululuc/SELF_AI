@@ -5,6 +5,8 @@
 Self AI is a model-centered coding agent framework.
 The core philosophy is simple: let the model own decision-making, while the system enforces boundaries, permissions, tool execution, and observable failure semantics.
 
+![SELF AI Poster](poster.png)
+
 Production path:
 
 `run_autonomy_workflow -> SelfAIKernel.run -> EngineLoop (MainLoop) -> ToolRuntime`

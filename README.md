@@ -187,6 +187,7 @@ docker compose ps
 ```powershell
 .\.venv\Scripts\python.exe -m streamlit run self_ai/frontend_app.py
 ```
+![SELF AI Poster](UI.png)
 
 ## Main Runtime Contracts
 

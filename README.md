@@ -1,4 +1,4 @@
-﻿# Self AI
+# Self AI
 
 > **Large model capability is all you need.**
 
@@ -57,31 +57,31 @@ sequenceDiagram
     participant User
     participant Main as run_autonomy_workflow
     participant Kernel as SelfAIKernel
-    participant Loop as EngineLoop
+    participant Engine as EngineLoop
     participant Router as route_model
     participant Runtime as ToolRuntime
     participant Tool as Adapters/Tools
 
     User->>Main: task / question
     Main->>Kernel: run(input, session_id, metadata)
-    Kernel->>Loop: initialize EngineState
+    Kernel->>Engine: initialize EngineState
 
     loop MainLoop turn
-        Loop->>Router: model.generate(compiled prompt)
-        Router-->>Loop: {final_answer | tool_calls}
+        Engine->>Router: model.generate(compiled prompt)
+        Router-->>Engine: final_answer or tool_calls
 
         alt tool_calls
-            Loop->>Runtime: execute(tool_calls)
+            Engine->>Runtime: execute(tool_calls)
             Runtime->>Tool: run tool(s)
             Tool-->>Runtime: tool outputs
-            Runtime-->>Loop: normalized results + execution flags
-            Loop->>Loop: update state, evidence counters, control events
+            Runtime-->>Engine: normalized results + execution flags
+            Engine->>Engine: update state, evidence counters, control events
         else final_answer
-            Loop->>Loop: semantic completion gate
+            Engine->>Engine: semantic completion gate
             alt gate passes
-                Loop-->>Kernel: finalized result
+                Engine-->>Kernel: finalized result
             else gate blocks
-                Loop->>Loop: emit block reason and continue next turn
+                Engine->>Engine: emit block reason and continue next turn
             end
         end
     end
